@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="css/info-styles.css">
+<div class="info-page">
+    <div class="info-page__img">
+        <img src="img/info-page-header.jpg" alt="">
+    </div>
+    <div class="info-page__list">
+        <ul>
+            <li>
+                <span><img src="img/globe.png" alt=""></span>
+                <div class="info-page__list-text">
+                    平台严格核实用户资料
+                    相亲方式简单高效
+                </div>
+            </li>
+            <li>
+                <span><img src="img/users.png" alt=""></span>
+                <div class="info-page__list-text">
+                    83%的用户年收入超过15万
+                    100%专科及以上学历
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="info-page__bottom">
+        <div class="info-page__bottom-left">
+            <a href="#" class="info-page__button">扫码开始体验</a>
+            <span>多一个靠谱的脱单途径</span>
+        </div>
+        <div class="info-page__bottom-right">
+            <img src="img/qr2.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

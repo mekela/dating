@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            我的会员
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="my-user-level">
+            <ul>
+                <li>
+                    <i class="fa fa-diamond" aria-hidden="true"></i>
+                    <a href="#">开通VIP，</a>
+                    <a href="#">享受VIP特权</a>
+                    <span>当前为：免费用户</span>
+                </li>
+                <li>
+                    <i class="fa fa-jpy" aria-hidden="true"></i>
+                    <span>剩余金币：</span>
+                    <a href="#">2枚</a>
+                    <a href="#" class="button gray-btn">点击购买</a>
+                    <a href="#" class="button gray-btn">账户明细</a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-user-level my-user-level-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>普通VIP</th>
+                        <th>高级SVIP</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>赠送金币</td>
+                    <td>200</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>屏蔽用户</td>
+                    <td>50</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>搜索展示 <i class="fa fa-question-circle" aria-hidden="true"></i></td>
+                    <td>优先展示</td>
+                    <td>最高优先展示</td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>不展示已经看过的</td>
+                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>¥399/年</strong></td>
+                    <td><strong>¥599/年</strong></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#tips" class="button fancybox">开通</a></td>
+                    <td><a href="#tips" class="button fancybox">升级</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            账户明细
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="buy-coin">
+            <nav class="buy-coin__tab-nav">
+                <a href="#tab1" class="active">金币明细</a>
+                <a href="#tab2">充值明细</a>
+            </nav>
+            <div class="buy-coin__tab" id="tab1" style="display: block;">
+                <div class="buy-coin__my">
+                    <div>
+                        <i class="fa fa-jpy" aria-hidden="true"></i>
+                        <span>总消费：399元</span>
+                    </div>
+                </div>
+                <div class="buy-coin__list">
+                    <ul>
+                        <li>
+                            <div class="buy-coin__txt">支付2017年普通VIP年费</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                        <li>
+                            <div class="buy-coin__txt">支付2017年普通VIP年费</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                        <li>
+                            <div class="buy-coin__txt">支付2017年普通VIP年费</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                        <li>
+                            <div class="buy-coin__txt">支付2017年普通VIP年费</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buy-coin__tab" id="tab2">
+                <div class="buy-coin__my">
+                    <div>
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <span>剩余金币：83枚</span>
+                    </div>
+                </div>
+                <div class="buy-coin__list">
+                    <ul>
+                        <li>
+                            <div class="buy-coin__txt">发送求认识扣除1枚金币</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                        <li>
+                            <div class="buy-coin__txt">发送求认识扣除1枚金币</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                        <li>
+                            <div class="buy-coin__txt">发送求认识扣除1枚金币</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                        <li>
+                            <div class="buy-coin__txt">发送求认识扣除1枚金币</div>
+                            <div class="buy-coin__date">
+                                20170815  17:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            上传头像
+        </div>
+        <div class="top-panel__filter">
+            保存
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="upload-image">
+            <figure class="upload-image__user">
+                <img src="img/man.png" alt="">
+                <figcaption>头像预览</figcaption>
+            </figure>
+            <div class="upload-image__drop">
+                <figure>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    <figcaption>上传图片</figcaption>
+                </figure>
+                <section>只支持JPG、PNG、GIT格式
+                    图片大小不超过5M
+                    建议尺寸为350×350像素</section>
+            </div>
+        </div>
+        <div class="search-form__button">
+            <button class="button empty">重置</button>
+            <button class="button">确认</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1"/>
+    <title>面向对象</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+</head>
+<body>
+<div class="wrapper">
+    
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            我屏蔽的人
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="catalog">
+            <div class="catalog__block">
+                <a href="#attention4" class="catalog__close fancybox"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="catalog__top">
+                    <figure>
+                        <img src="img/catalog_small.png" alt="">
+                        <figcaption class="vip">
+                            SVIP
+                        </figcaption>
+                    </figure>
+                    <div class="catalog__top-text">
+                        <div class="catalog__name">
+                            <h6>AWWA</h6>
+                            <span>IT互联网 </span>
+                            <span>运营总监</span>
+                        </div>
+                        <div class="catalog__tags">
+                            <span>30岁</span>
+                            <span>160cm</span>
+                            <span>上海</span>
+                            <span>本科</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__image">
+                    <img src="img/catalog_block.png" alt="">
+                </div>
+            </div>
+            <div class="catalog__block">
+                <a href="#attention4" class="catalog__close fancybox"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="catalog__top">
+                    <figure>
+                        <img src="img/catalog_small.png" alt="">
+                        <figcaption class="vip">
+                            SVIP
+                        </figcaption>
+                    </figure>
+                    <div class="catalog__top-text">
+                        <div class="catalog__name">
+                            <h6>AWWA</h6>
+                            <span>IT互联网 </span>
+                            <span>运营总监</span>
+                        </div>
+                        <div class="catalog__tags">
+                            <span>30岁</span>
+                            <span>160cm</span>
+                            <span>上海</span>
+                            <span>本科</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__image">
+                    <img src="img/catalog_block.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- panel -->
+<div class="bottom-panel">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#" class="bottom-panel__trigger">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <span>找对象</span>
+                </a>
+                <ol class="bottom-panel__drop">
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    <span>消息</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="bottom-panel__trigger">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>我的</span>
+                </a>
+                <ol class="bottom-panel__drop">
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                    <li><a href="#">我的主页</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end-panel -->
+<!-- modal -->
+<div class="modal" id="attention">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <h6>资料不完整，无法发送求认识</h6>
+    <p>填写详细资料，认证通过后 <br>向ta发送求认识，马上找对象</p>
+    <a href="#" class="button">马上填写资料</a>
+</div>
+<div class="modal" id="attention2">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <p>关注对方后，将在我的关注列表展示</p>
+    <a href="#" class="button">确定</a>
+</div>
+<div class="modal" id="attention3">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <h6>发送求认识将扣除一枚金币 <br>
+        当前的金币数：<span class="red">120 个</span></h6>
+    <p>发送求认识后，系统将通知对方<br>
+        如果对方接受了你的求认识<br>
+        系统会把你的微信号公开给对方<br>
+        同时，你也可以获取到对方的微信号</p>
+    <a href="#" class="button">确定</a>
+</div>
+<div class="modal no-padding" id="tips">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close white"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="modal__head">
+        提示
+    </div>
+    <article class="modal__text-center">
+    <p>筛选对象时 <br>
+        VIP优先展示</p>
+    </article>
+</div>
+<div class="modal" id="attention4">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <p>取消对ta的关注</p>
+    <a href="#" class="button">确定</a>
+</div>
+<!-- end-modal -->
+
+</div>
+
+
+<!--SCRIPT -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/jquery.jscroll.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
+
+</body>
+</html>

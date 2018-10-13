@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            大量曝光
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="buy-coin">
+            <article class="lamp">
+                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                <h5>大量曝光（ 仅VIP会员才可以报名）</h5>
+                <p>报名大量曝光，通过以后可以在 “面向对象” 合作的
+                    微信公众号和微博号推送</p>
+            </article>
+            <div class="buy-coin__textarea">
+                <div>
+                    <textarea placeholder="最喜欢的三本书："></textarea>
+                </div>
+                <div>
+                    <textarea placeholder="最喜欢的三本书："></textarea>
+                </div>
+                <div>
+                    <textarea placeholder="最喜欢的三本书："></textarea>
+                </div>
+                <div>
+                    <textarea placeholder="最喜欢的三本书："></textarea>
+                </div>
+            </div>
+            <div class="edit-profile__button">
+                <button class="button">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

@@ -1,0 +1,360 @@
+
+.panel{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-radius: 8px;
+	border-width: 0;
+	.panel-body{
+		padding: 20px;
+		@media (min-width: @screen-md-min) {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+}
+.panel-alt{
+	background: @color-vlgray;
+}
+
+.form-horizontal{
+	.form-group{
+		padding-bottom: 20px;
+	}
+}
+.form-control{
+	color: @color-gray;
+	background: @color-vlgray;
+	border-color: @color-lgray2;
+}
+
+
+.fc-sel{
+	display: block;
+	position: relative;
+	&:after{
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin: -3px 10px 0 0;
+		border: solid transparent;
+		border-top-color: @color-dgray;
+		border-width: 6px 4px 4px 4px;
+	}
+	select{
+		position: relative;
+		z-index: 2;
+		padding-right: 25px;
+		background: transparent;
+		border-width: 0;
+		border-radius: 0;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	    appearance:none;
+	    -moz-appearance:none;
+	    -webkit-appearance:none;
+	    &:focus{
+			box-shadow: none;
+			-webkit-box-shadow: none;
+	    }
+	}
+	.fc-col2 & {
+		float: left;
+		width: 50%;
+	}
+	.fc-col3 & {
+		float: left;
+		width: 33.33333%;
+	}
+}
+.fc-col{
+	.fc-col2 & {
+		float: left;
+		width: 50%;
+	}
+}
+.fc-text,.fc-text:focus{
+	border-width: 0;
+	background: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.btn{
+	min-width: 120px;
+	padding: 6px 20px;
+	font-size: @font-size-md;
+	white-space: normal;
+	border-radius: 10px;
+	.svg-icon{
+		display: inline-block;
+	}
+}
+.btn-default{
+	border-color: @primary-color;
+	color: @primary-color;
+	background: transparent;
+	.svg-icon{
+		fill: @primary-color;
+	}
+}
+.btn-primary {
+	background-color: @primary-color;
+	color: @primary-text-color;
+	border-color: @primary-color;
+	&:hover,&:focus,&:active:focus,&:active{
+		background-color: @primary-color10;
+		color: @primary-text-color;
+		border-color: @primary-color10;
+	}
+}
+.btn-dark {
+	color: @color-gray;
+	border-color: @color-gray;
+	&:hover,&:focus,&:active:focus,&:active{
+		color: @primary-color;
+		border-color: @primary-color;
+	}
+}
+.btn-alt{
+	background-color: @secondary-color;
+	color: @secondary-text-color;
+	border-color: @color-white;
+	&:hover,&:focus,&:active:focus,&:active{
+		background-color: @secondary-color;
+		color: @secondary-text-color;
+		border-color: @color-white;
+	}
+}
+.btn-gray{
+	background-color: @color-vlgray;
+	color: @secondary-text-color;
+	border-color: @color-vlgray;
+	&:hover,&:focus,&:active:focus,&:active{
+		background-color: @color-vlgray;
+		color: @secondary-text-color;
+		border-color: @color-vlgray;
+	}
+}
+.btn-200{
+	width: 200px;
+	max-width: 100%;
+}
+.btn-white{
+	color: @primary-color;
+	background: @color-white;
+	border-color: @primary-color;
+	&:hover,&:focus,&:active:focus,&:active{
+		color: @primary-color;
+		background: @color-white;
+		border-color: @primary-color;
+	}
+	.svg-icon{
+		fill: @primary-color;
+	}
+}
+.btn-in{
+	position: relative;
+	padding-left: 30px;
+	.svg-icon{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -12px;
+	}
+}
+.btn-xs{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 10px;
+}
+
+.well{
+	background: @color-vlgray;
+	border-color: @color-lgray2;
+}
+
+.radio-in{
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	.radio-lbl{
+		position: relative;
+		padding: 0 0 0 30px;
+		&:before,&:after{
+			content: "";
+			position: absolute;
+			left: 5px;
+			top: 3px;
+			width: 14px;
+			height: 14px;
+			border: 1px solid @primary-color;
+			border-radius: 50%;
+		}
+		&:after{
+			display: none;
+			position: absolute;
+			left: 8px;
+			top: 6px;
+			width: 8px;
+			height: 8px;
+			background: @primary-color;
+		}
+	}
+	input[type="radio"]{
+		opacity: 0;
+		position: absolute;
+		right: 100%;
+		top: 100%;
+		margin-right: 10px;
+		&:checked + .radio-lbl{
+			&:after{
+				display: block;
+			}
+		}
+	}
+}
+.checkbox-in{
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	.checkbox-lbl{
+		position: relative;
+		padding: 0 0 0 30px;
+		&:before,&:after{
+			content: "";
+			position: absolute;
+			left: 5px;
+			top: 2px;
+			width: 14px;
+			height: 14px;
+			border: 1px solid @primary-color;
+			background: @color-white;
+			border-radius: 2px;
+		}
+		&:after{
+			display: none;
+			position: absolute;
+			left: 8px;
+			top: 3px;
+			width: 7px;
+			height: 9px;
+			border: solid @color-white;
+    		border-width: 0 3px 3px 0;
+    		transform: rotate(45deg);
+    		background: transparent;
+    		border-radius: 0;
+		}
+	}
+	input[type="checkbox"]{
+		opacity: 0;
+		position: absolute;
+		right: 100%;
+		top: 100%;
+		margin-right: 10px;
+		&:checked + .checkbox-lbl{
+			&:before{
+				background: @primary-color;
+			}
+			&:after{
+				display: block;
+			}
+		}
+	}
+}
+
+.nav-tabs-alt{
+	> li{
+		margin: 0;
+		width: 50%;
+		> a{
+			margin: 0;
+			text-align: center;
+			background: @color-vlgray;
+			border: 1px solid @color-lgray2;
+			border-bottom-width: 0;
+			border-radius: 0;
+		}
+		&:first-child{
+			> a{
+				border-right-width: 0!important;
+			}
+		}
+	}
+}
+.nav-tabs-primary{
+	.nav-tabs{
+		background: @color-vlgray;
+		> li{
+			float: left;
+			width: 20%;
+			margin: 0;
+			text-align: center;
+			> a{
+				margin: 0;
+				padding: 5px;
+				color: @color-dgray;
+				border-top: 1px solid #d7d7d7;
+				border-left: 1px solid #d7d7d7;
+				border-radius: 0;
+			}
+			&.active{
+				a{
+					color: @primary-text-color;
+					background: @primary-color;
+					border-right-width: 0!important;
+					border-bottom-width: 0!important;
+				}
+			}
+		}
+	}
+	.tab-content{
+		padding: 15px 20px;
+		background: @color-vlgray;
+	}
+}
+
+.modal-primary{
+	.modal-dialog{
+		@media (min-width: @screen-sm-min) {
+			width: 500px;
+		}
+	}
+}
+.modal-header{
+	position: relative;
+	padding: 5px 15px;
+	color: @primary-text-color;
+	background: @primary-color;
+	border-bottom-width: 0;
+	.modal-title{
+		font-size: @font-size-sm;
+	}
+	.close{
+		position: absolute;
+		right: 15px;
+		top: 0;
+		color: inherit;
+		font-size: 28px;
+		font-weight: 400;
+		opacity: 1;
+		outline: 0!important;
+	}
+}
+.modal-content{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-width: 0;
+}
+.modal-footer{
+	padding: 20px 0 40px;
+	text-align: center;
+	border-top-width: 0;
+	.btn{
+		margin: 0 8px;
+		
+	}
+}

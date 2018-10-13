@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            付款
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="buy-coin">
+            <article>
+                <p>付款成功</p>
+            </article>
+            <div class="buy-coin__my">
+                <div>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <span>恭喜你，支付成功 <em>你获得 <em class="red">200</em> 金币</em></span>
+                </div>
+            </div>
+            <nav class="buy-coin__buttons">
+                <a href="#" class="button empty">个人主页</a>
+                <a href="#" class="button empty">马上找对象</a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

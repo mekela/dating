@@ -1,0 +1,411 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            编辑资料
+        </div>
+        <div class="top-panel__filter">
+            保存
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="edit-profile">
+            <div class="edit-profile__block">
+                <div class="edit-profile__img">
+                    <figure>
+                        <div class="edit-profile__img-item">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                            <span>上传头像</span>
+                        </div>
+                        <figcaption>未审核</figcaption>
+                    </figure>
+                    <strong>我的头像</strong>
+                </div>
+            </div>
+            <div class="edit-profile__block">
+                <div class="edit-profile__title">
+                    <h4>基本资料 <strong>（必填）</strong></h4>
+                    <h6>请认真填写真实资料，修改资料有次数限制</h6>
+                </div>
+                <div class="edit-profile__form">
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>购房</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>性别</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>性别</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>身高cm</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>体重kg</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>现居城市</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>户籍所在地</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>家乡/老家</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>学历</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>婚姻状况</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>子女情况</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>行业</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>职业</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-profile__block">
+                <div class="edit-profile__title">
+                    <h4>详细资料 <strong>（必填）</strong></h4>
+                    <h6>请认真填写真实资料，修改资料有次数限制</h6>
+                </div>
+                <div class="edit-profile__form">
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>户籍所在地</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>家乡/老家</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>学历</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>婚姻状况</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>子女情况</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>行业</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>职业</span>
+                            <select>
+                                <option>不限</option>
+                                <option>25-30岁</option>
+                                <option>25-30岁</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="select-label">
+                            <span>兴趣爱好</span>
+                        </label>
+                    </div>
+                    <div class="edit-profile__tabs">
+                        <nav class="edit-profile__tab-nav">
+                            <a href="#edit_tab1" class="active">电影</a>
+                            <a href="#edit_tab2">音乐</a>
+                            <a href="#edit_tab3">阅读</a>
+                            <a href="#edit_tab4" >运动</a>
+                            <a href="#edit_tab5">美食</a>
+                        </nav>
+                        <div class="edit-profile__tab-content">
+                            <div class="edit-profile__tab-item active" id="edit_tab1">
+                                <ul>
+                                    <li><label class="checkbox"><input type="checkbox"><span>1网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                </ul>
+                            </div>
+                            <div class="edit-profile__tab-item" id="edit_tab2">
+                                <ul>
+                                    <li><label class="checkbox"><input type="checkbox"><span>2网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                </ul>
+                            </div>
+                            <div class="edit-profile__tab-item" id="edit_tab3">
+                                <ul>
+                                    <li><label class="checkbox"><input type="checkbox"><span>3网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                </ul>
+                            </div>
+                            <div class="edit-profile__tab-item" id="edit_tab4">
+                                <ul>
+                                    <li><label class="checkbox"><input type="checkbox"><span>4网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                </ul>
+                            </div>
+                            <div class="edit-profile__tab-item" id="edit_tab5">
+                                <ul>
+                                    <li><label class="checkbox"><input type="checkbox"><span>5网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>网球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>乒乓球</span></label></li>
+                                    <li><label class="checkbox"><input type="checkbox"><span>滑雪</span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-profile__block">
+                <div class="edit-profile__title">
+                    <h4>认证资料-不对外公开 <strong>（必填）</strong></h4>
+                    <h6>请认真填写真实资料，修改资料有次数限制</h6>
+                </div>
+                <div class="edit-profile__form">
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>真实姓名</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>身份证号</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>学历证编号
+                                <small>(请勿填写学位证编号）</small>
+                            </span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-profile__block">
+                <div class="edit-profile__title">
+                    <h4>认证资料-不对外公开 <strong>（必填）</strong></h4>
+                    <h6>请认真填写真实资料，修改资料有次数限制</h6>
+                </div>
+                <div class="edit-profile__form">
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>邮件
+                                <small>(请勿填写学位证编号）</small>
+                            </span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>手机号</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>微信号</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                    <div class="search-form__line">
+                        <label class="input-label">
+                            <span>微信二维码</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </div>
+                </div>
+                <a href="#" class="chat-block">
+                    <i class="fa fa-weixin"></i>
+                    <span>微信授权</span>
+                </a>
+                <div class="qr-block">
+                    <img src="img/qr.png" alt="">
+                    <section>
+                        请关注面向对象二维码 <br>
+                        用于接收相亲消息及系统通知
+                    </section>
+                </div>
+            </div>
+
+            <div class="edit-profile__button">
+                <button class="button">提交</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% include "modals.html" %}
+
+{% endblock %}

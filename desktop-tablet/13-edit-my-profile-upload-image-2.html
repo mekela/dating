@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset=utf-8>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>面向对象</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="page-wrap">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<a href="#" class="svg-icon site-logo" title="面向对象"><svg><use xlink:href="#site-logo-alt"></use></svg></a>
+					</div>
+					<div class="col-sm-6">
+						<ul class="nav nav-pills">
+							<li><a href="#">找对象</a></li>
+							<li class="active"><a href="#"><span class="nav-active">消息<span class="badge">3</span></span></a></li>
+							<li><a href="#">我的</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 pl0">
+						<div class="header-right">
+							<a href="#" class="user-img">
+								<img src="img/user.jpg" alt="" class="img-circle">
+								<span class="badge badge-lvl">VIP</span>
+							</a>
+							<a href="#" class="user-nname">我的昵称</a>
+							<a href="#" class="nav-faq"><span class="svg-icon"><svg><use xlink:href="#icon-qmark"></use></svg></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="page-body">
+			<div class="container">  	
+				<form>
+					<section class="p-section">
+				  		<h3 class="p-title"><span class="ht-in">上传头像</span></h3>	
+					  	<div class="panel">
+						  	<div class="user-avatar">
+						  		<p><a href="#"><img src="img/user-avatar.png" alt=""></a></p>
+						  		<p>我的头像</p>
+					  		</div>
+				  		</div>
+				  	</section>	
+					<section class="p-section">
+				  		<h3 class="p-title"><span class="ht-in">基本资料</span></h3>	
+					  	<div class="panel">		
+					  		<div class="row">
+					  			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+								  	<ul class="list-ucriteria">
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">昵称</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" class="form-control text-primary fc-text" value="请输入">
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">性别</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">出生日期</div>
+									  			<div class="col-sm-6 fc-col3">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>年</option>
+															<option>年</option>
+															<option>年</option>
+														</select>
+													</span>
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>月</option>
+															<option>月</option>
+															<option>月</option>
+														</select>
+													</span>
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>日</option>
+															<option>日</option>
+															<option>日</option>
+														</select>
+													</span>
+												</div>
+								  			</div>
+								  		</li>	
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">身高cm</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">体重kg</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" class="form-control text-primary fc-text" value="请输入">
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">现居城市</div>
+									  			<div class="col-sm-6 fc-col2">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+												</div>
+								  			</div>
+								  		</li>	
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">户籍所在地</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">家乡/老家</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">学历</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">年收入</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">婚姻状况</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">子女情况</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>	  	
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">行业</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">职业</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+									</ul>
+								</div>
+							</div>
+			  			</div>
+				  	</section>
+					<section class="p-section">
+				  		<h3 class="p-title"><span class="ht-in">详细资料</span></h3>	
+					  	<div class="panel">		
+					  		<div class="row">
+					  			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+								  	<ul class="list-ucriteria">
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">购房</div>
+									  			<div class="col-sm-6 fc-col2">
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+								  					<span class="fc-sel">
+								  						<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+												</div>
+								  			</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">购车</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">期望结婚时间</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">是否接受异地恋</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">是否吸烟</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">是否独生子女</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item">
+								  			<div class="row">
+									  			<div class="col-sm-6 uc-lbl">父母情况</div>
+									  			<div class="col-sm-6">
+								  					<span class="fc-sel">
+														<select class="form-control">
+															<option>请选择</option>
+															<option>请选择</option>
+															<option>请选择</option>
+														</select>
+													</span>
+									  			</div>
+									  		</div>
+								  		</li>
+								  		<li class="uc-item ep-tab">
+								  			<span class="ep-tab-lbl">兴趣爱好</span>
+							  				<div class="nav-tabs-primary">
+												<ul class="nav nav-tabs" role="tablist">
+													<li><a href="#tab-film" aria-controls="tab-film" data-toggle="tab">电影</a></li>
+													<li><a href="#tab-music" aria-controls="tab-music" data-toggle="tab">音乐</a></li>
+													<li><a href="#tab-read" aria-controls="tab-read" data-toggle="tab">阅读</a></li>
+													<li class="active"><a href="#tab-activity" aria-controls="tab-activity" data-toggle="tab">运动</a></li>
+													<li><a href="#tab-food" aria-controls="tab-food" data-toggle="tab">美食</a></li>
+												</ul>
+
+												<div class="tab-content">
+													<div class="tab-pane" id="tab-film">
+
+													</div>
+													<div class="tab-pane" id="tab-music">
+														
+													</div>
+													<div class="tab-pane" id="tab-read">
+														
+													</div>
+													<div class="tab-pane active" id="tab-activity">
+														<ul class="list-chk">
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">网球</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">乒乓球</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">滑雪</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">羽毛球</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">游泳</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">排球</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">篮球</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">足球</span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox-inline checkbox-in">
+																	<input type="checkbox">
+																	<span class="checkbox-lbl">跑步</span>
+																</label>
+															</li>
+														</ul>
+													</div>
+													<div class="tab-pane" id="tab-food">
+														
+													</div>
+												</div>
+											</div>
+								  		</li>
+									</ul>
+								</div>
+							</div>
+			  			</div>
+				  	</section>
+					<section class="p-section">
+				  		<h3 class="p-title"><span class="ht-in">认证资料 - 不对外公开</span></h3>	
+					  	<div class="panel">	
+					  		<div class="row">
+					  			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+								  	<ul class="list-ucriteria">
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">真实姓名</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" value="请输入" class="form-control text-primary fc-text">
+									  			</div>
+									  		</div>
+									  	</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">身份证号</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" value="请输入" class="form-control text-primary fc-text">
+									  			</div>
+									  		</div>
+									  	</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">学历证编号（请勿填写学位证编号）</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" value="请输入" class="form-control text-primary fc-text">
+									  			</div>
+									  		</div>
+									  	</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				  	</section>
+					<section class="p-section">
+				  		<h3 class="p-title"><span class="ht-in">认证资料 - 不对外公开</span></h3>	
+					  	<div class="panel">	
+					  		<div class="row">
+					  			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+								  	<ul class="list-ucriteria pb10">
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">邮件（接收系统重要通知）</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" value="请输入" class="form-control text-primary fc-text">
+									  			</div>
+									  		</div>
+									  	</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-4 uc-lbl">手机号</div>
+									  			<div class="col-sm-3">
+									  				<input type="text" value="138111111" class="form-control text-primary fc-text">
+									  			</div>
+									  			<div class="col-sm-5 fc-col2">
+								  					<span class="fc-col uc-lbl">验证码</span>
+									  				<span class="fc-col">
+									  					<input type="text" value="125125" class="form-control text-primary fc-text">
+									  				</span>
+									  			</div>
+									  		</div>
+									  	</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">个人微信号</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" value="请输入" class="form-control text-primary fc-text">
+									  			</div>
+									  		</div>
+									  	</li>
+								  		<li class="uc-item">
+								  			<div class="row">	
+									  			<div class="col-sm-6 uc-lbl">个人微信二维码</div>
+									  			<div class="col-sm-6">
+									  				<input type="text" value="点击上传" class="form-control text-primary fc-text">
+									  			</div>
+									  		</div>
+									  	</li>
+								  		<li class="uc-item ep-tab">
+								  			<p class="text-center pt20">
+								  				<img src="img/wechat-profile.jpg" alt="">
+								  			</p>
+								  		</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				  	</section>
+					<section class="p-section pb30 text-center">
+			  			<input type="submit" value="保存资料" class="btn btn-primary btn-200">
+					</section>
+				</form>
+			</div>		
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-4">
+						<div class="about-desc">
+							<h4 class="ftitle">关于面向对象</h4>
+							<p>面向对象介绍</p>
+						</div>
+						<p class="m0">©面向对象 powered by <a href="#" class="text-link">jobbole</a> 法律声明</p>
+					</div>
+					<div class="col-sm-3 col-md-5">
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<p><img src="img/code.jpg" alt=""></p>
+						<ul class="nav nav-pills list-social">
+							<li><a href="#"><span class="svg-icon"><svg><use xlink:href="#icon-wechat-alt"></use></svg></span></a></li>
+							<li><a href="#"><span class="svg-icon"><svg><use xlink:href="#icon-weibo-alt"></use></svg></span></a></li>
+							<li><a href="#"><span class="svg-icon"><svg><use xlink:href="#icon-mail-alt"></use></svg></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal modal-primary fade" id="upload-photo1" tabindex="-1" role="dialog" aria-labelledby="uploadPhoto1Label">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="uploadPhoto1Label">上传头像</h4>
+				  	</div>
+				  	<div class="modal-body text-center">
+				  		<div class="modal-upload-image pt30">
+					      	<div class="row">
+					      		<div class="col-sm-8">
+					      			<div class="panel panel-alt panel-upload">
+										<div class="img-uploaded">
+											<img src="img/user-upload.jpg" alt="">
+										</div>
+									</div>
+									<div class="upload-detail">
+										<span class="upload-lbl">重新上传</span>
+										<div class="upload-control">
+											<span class="svg-icon"><svg><use xlink:href="#icon-minus-alt"></use></svg></span>
+											<span class="svg-icon"><svg><use xlink:href="#icon-plus-alt"></use></svg></span>			
+											<span class="svg-icon"><svg><use xlink:href="#icon-rotate"></use></svg></span>
+										</div>
+									</div>
+
+					      		</div>
+					      		<div class="col-sm-4">
+					      			<div class="img-preview">
+					      				<img src="img/user-photo4.jpg" alt="">
+								  	</div>
+					      			<p class="text-gray">头像预览</p>
+					      		</div>
+					      	</div>
+					    </div>
+				  	</div>
+				  	<div class="modal-footer">
+				        <button type="button" class="btn btn-primary">确定</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="svg-icons">
+		<svg xmlns="http://www.w3.org/2000/svg">
+
+			<symbol viewBox="0 0 400 130" id="site-logo-alt">
+				<path fill="#FFFFFF" d="M156.371,97.344l-1.589-0.713c-15.467-6.941-24.957-17.18-26.041-28.097
+					c-0.621-6.281,1.834-12.042,6.566-15.418c2.609-1.861,5.491-2.805,8.561-2.805c5.237,0,9.732,2.738,12.503,4.939
+					c2.771-2.201,7.269-4.939,12.506-4.939c3.069,0,5.948,0.943,8.562,2.805c4.731,3.376,7.184,9.138,6.563,15.418
+					c-1.084,10.917-10.574,21.158-26.041,28.097L156.371,97.344z M143.868,58.076c-1.443,0-2.77,0.445-4.057,1.362
+					c-2.473,1.764-3.69,4.8-3.342,8.33c0.754,7.613,8.152,15.403,19.901,21.04c11.752-5.637,19.147-13.425,19.904-21.04
+					c0.349-3.53-0.868-6.566-3.345-8.331c-1.287-0.916-2.613-1.361-4.054-1.361c-4.13,0-8.449,3.731-9.63,5.036l-2.876,3.167
+					l-2.873-3.167C152.215,61.72,147.961,58.076,143.868,58.076z"/>
+				<path fill="#FFFFFF" d="M199.35,37.312c-1.52-3.262-4.011-5.714-7.189-7.095c-1.574-0.734-3.312-1.09-5.31-1.09h-37.27h-1.797
+					l2.848-4.94c1.162-2.02,0.518-4.417-1.587-5.631c-2.019-1.162-4.417-0.515-5.579,1.502l-5.226,9.069h-12.741
+					c-2.002,0-3.739,0.355-5.286,1.078c-3.218,1.35-5.649,3.741-7.235,7.14c-0.702,1.756-1.071,3.58-1.071,5.275v65.438
+					c0,2.289,1.795,4.084,4.081,4.084h0.205c2.292,0,4.084-1.795,4.084-4.084V42.621c0-1.475,0.448-2.62,1.408-3.67
+					c1.174-1.074,2.349-1.553,3.814-1.553h61.352c1.401,0,2.69,0.524,3.766,1.511c1.005,1.092,1.453,2.237,1.453,3.712v56.033
+					c0,1.432-0.481,2.637-1.408,3.566c-1.195,1.096-2.479,1.649-3.811,1.649h-12.062c-2.252,0-4.084,1.789-4.084,4.089
+					c0,2.288,1.792,4.082,4.084,4.082h12.062c1.613,0,3.514-0.13,5.291-1.079c3.306-1.431,5.73-3.824,7.227-7.136
+					c0.721-1.806,1.071-3.5,1.071-5.172V42.621C200.439,40.925,200.067,39.101,199.35,37.312z"/>
+				<path fill="#FFFFFF" d="M266.189,80.77c0.552,0,1.387-0.066,2.161-0.588l0.249-0.131c1.241-0.742,1.982-2,1.982-3.367
+					c0-0.696-0.218-1.443-0.611-2.099l-10.459-17.839c-1.278-1.821-3.497-2.44-5.374-1.428h-0.221l-0.176,0.111
+					c-1.293,0.826-2.062,2.155-2.062,3.566c0,0.68,0.188,1.296,0.603,1.998l10.523,17.768C263.498,80.038,264.736,80.77,266.189,80.77z
+					"/>
+				<path fill="#FFFFFF" d="M290.599,29.146h-4.623l0.013-7.069c0-2.329-1.756-4.087-4.187-4.087c-2.331,0-4.087,1.758-4.087,4.087
+					l-0.013,7.069h-26.146c-2.292,0-4.084,1.792-4.084,4.083v0.203c0,2.293,1.792,4.087,4.084,4.087h26.146v61.035
+					c0,2.827-2.389,5.222-5.219,5.222h-11.553c-2.288,0-4.086,1.792-4.086,4.184c0,2.292,1.798,4.087,4.086,4.087h11.553
+					c7.563,0,13.492-5.926,13.492-13.492V37.519h4.623c2.213,0,4.084-1.871,4.084-4.087v-0.203
+					C294.683,31.016,292.812,29.146,290.599,29.146z"/>
+				<path fill="#FFFFFF" d="M91.783,34.995c-1.55-0.775-3.405-1.202-5.225-1.202H47.327l3.839-6.666
+					c0.167-0.284,0.284-0.58,0.379-0.876h44.513c2.217,0,4.084-1.87,4.084-4.183c0-2.218-1.867-4.087-4.084-4.087H15.695
+					c-2.253,0-4.087,1.833-4.087,4.184c0,2.251,1.834,4.086,4.087,4.086h26.432l-4.345,7.542H25.067c-1.759,0-3.512,0.402-5.183,1.181
+					c-3.29,1.378-5.716,3.77-7.223,7.104c-0.669,1.441-0.984,3.129-0.984,5.307v51.174c0,2.146,0.294,3.729,0.984,5.312
+					c1.55,3.316,3.972,5.736,7.231,7.211c1.611,0.645,3.349,0.969,5.174,0.969H52.66h5.544h3.992c1.613,0,3.531-0.229,5.309-1.178
+					c3.306-1.432,5.73-3.823,7.226-7.135c0.721-1.806,1.072-3.5,1.072-5.174v-3.066h0.024V56.705H75.8v-4.966
+					c0-2.253-1.856-4.087-4.238-4.087c-2.283,0-4.142,1.834-4.142,4.087v4.974H44.64V42.167h22.816v0.007h8.371v-0.007h10.731
+					c1.374,0,2.558,0.493,3.669,1.507c1.096,1.202,1.55,2.277,1.55,3.71v41.611l-0.026,0.001v19.116c0,2.253,1.889,3.938,4.229,3.938
+					c2.24,0,4.063-1.754,4.063-4.007V93.105h0.008V47.383c0-1.941-0.378-3.779-1.077-5.281C97.587,38.803,95.153,36.409,91.783,34.995z
+					 M66.024,102.129c-1.196,1.097-2.479,1.652-3.812,1.652h-4.009v-0.001h-4.308v0.001h-1.22c-0.037,0-0.072,0.01-0.109,0.011H27.632
+					v-0.012h-2.564c-1.35,0-2.588-0.531-3.608-1.552c-1.102-1.008-1.613-2.174-1.613-3.671V47.383c0-1.46,0.472-2.529,1.629-3.686
+					c1.005-1.002,2.243-1.531,3.593-1.531h11.308v25.605V88.94v4.946c0,2.252,1.822,4.087,4.159,4.087c2.24,0,4.065-1.835,4.065-4.087
+					V88.94h0.04v-0.018h22.792v9.64C67.432,99.997,66.95,101.202,66.024,102.129z M67.42,64.983v13.188h0.012v2.38H44.64V64.983H67.42z
+					"/>
+				<path fill="#FFFFFF" d="M241.463,37.345c-1.587-3.398-4.018-5.79-7.235-7.14c-1.327-0.62-2.807-0.953-4.46-1.04l0.001-0.038
+					h-12.791c-2.331,0-4.087,1.759-4.087,4.188c0,2.326,1.756,4.082,4.087,4.082h11.964c1.466,0,2.64,0.479,3.814,1.553
+					c0.96,1.05,1.408,2.195,1.408,3.67v8.089c0,0.01,0.003,0.02,0.003,0.03v14.167c-1.657,4.007-3.85,9.15-6.09,14.196
+					c-2.373-5.119-4.588-9.781-6.355-14.34V48.957c0-2.253-1.855-4.087-4.238-4.087c-2.283,0-4.142,1.834-4.142,4.087v16.469h0.011
+					c0.183,0.515,3.159,8.986,10.027,23.883c-2.537,5.193-8.646,16.867-8.646,18.447c0,1.131,0.479,2.21,1.235,2.853l0.163,0.166
+					c0.712,0.833,1.714,1.271,2.892,1.271c1.195,0,2.383-0.174,2.964-1.235c2.249-4.113,4.269-7.98,6.09-11.603
+					c1.761,3.613,3.69,7.479,5.813,11.603c0.554,1.075,1.765,1.235,2.961,1.235c1.18,0,2.182-0.438,2.894-1.271l0.163-0.166
+					c0.758-0.643,1.232-1.722,1.232-2.853c0-1.472-6.425-14.267-8.369-18.26c7.029-15.188,9.604-24.003,9.762-24.59V50.709v-3.822
+					v-4.267C242.534,40.925,242.165,39.101,241.463,37.345z"/>
+				<g>
+					<path fill="#FFFFFF" d="M372.86,108.452c-1.695,0-3.519-0.372-5.308-1.09c-3.263-1.52-5.716-4.011-7.093-7.189
+						c-0.735-1.574-1.09-3.312-1.09-5.31v-6.27v-2.068v-6.515c0-2.001,0.354-3.738,1.078-5.285c1.35-3.219,3.741-5.649,7.138-7.235
+						c1.756-0.702,3.579-1.072,5.274-1.072h6.541c2.286,0,4.081,1.796,4.081,4.081v0.206c0,2.292-1.795,4.084-4.081,4.084h-6.541
+						c-1.472,0-2.619,0.448-3.666,1.407c-1.078,1.175-1.554,2.35-1.554,3.814v14.853c0,1.401,0.524,2.69,1.508,3.766
+						c1.093,1.005,2.24,1.453,3.712,1.453"/>
+					<path fill="#FFFFFF" d="M372.627,100.073h10.613c2.253,0,4.087,1.858,4.087,4.241c0,2.279-1.834,4.138-4.087,4.138h-10.932"/>
+					<path fill="#FFFFFF" d="M356.751,89.55c0.034-0.229,0.049-0.463,0.076-0.696c0.055-0.496,0.105-0.996,0.14-1.501
+						c0.018-0.285,0.024-0.569,0.033-0.857c0.012-0.296,0.024-0.596,0.027-0.896c0.018-5.586-1.42-10.893-2.495-14.065
+						c-0.012-0.003-0.023-0.012-0.039-0.015c-1.047-3.157-2.383-6.191-3.975-9.033h28.105c2.197,0,4.114-0.806,5.736-2.429
+						c1.511-1.765,2.246-3.582,2.246-5.555v-7.983c0-2.043-0.735-3.893-2.301-5.718c-1.674-1.548-3.633-2.371-5.682-2.371h-11.979
+						l3.823-6.481c0.764-1.296,0.772-2.852,0.024-4.162c-0.757-1.326-2.122-2.113-3.657-2.113h-36.303l0.805-1.384
+						c0.588-1.057,0.742-2.076,0.476-3.148c-0.357-1.195-1.093-2.098-2.079-2.591c-0.615-0.366-1.32-0.561-2.044-0.561
+						c-1.522,0-2.919,0.839-3.62,2.171l-4.306,7.426c-0.757,1.284-0.771,2.815-0.042,4.1c0.741,1.295,2.073,2.067,3.566,2.067h36.618
+						l-2.9,4.677h-44.659c-2.043,0-4.008,0.823-5.719,2.41c-1.592,1.72-2.367,3.575-2.367,5.679v7.983c0,2.034,0.775,3.857,2.386,5.595
+						c1.587,1.583,3.506,2.389,5.7,2.389h19.6c-2.701,1.311-5.525,2.513-8.438,3.584c-5.643,2.08-11.691,3.832-18.527,5.376
+						c-2.155,0.636-3.463,2.677-3.094,4.89c0.421,1.992,2.053,3.382,3.96,3.382c0.36,0,0.724-0.043,1.054-0.134
+						c7.338-1.644,13.85-3.551,19.91-5.837c6.336-2.403,11.57-4.907,15.979-7.649c0.98,1.771,1.84,3.557,2.53,5.004
+						c-5.155,3.151-11.234,6.03-18.076,8.556c-6.902,2.47-14.57,4.688-22.069,6.33c-2.276,0.508-3.735,2.709-3.26,4.855l0.016,0.154
+						c0.417,1.88,2.106,3.245,4.017,3.245c0.306,0,0.605-0.036,0.887-0.103c8.432-1.841,16.375-4.153,23.489-6.8
+						c6.406-2.268,12.33-4.943,17.619-7.959c0.402,2.099,0.608,3.984,0.608,5.619v0.245c-0.366,0.088-0.733,0.2-1.081,0.372
+						c-5.389,2.979-11.688,5.68-19.271,8.24c-7.196,2.368-15.194,4.602-22.986,6.346c-1.105,0.185-2.089,0.814-2.703,1.726
+						c-0.618,0.911-0.818,2.004-0.594,3.033l0.016,0.151c0.433,1.953,2.134,3.318,4.138,3.318c0.239,0,0.481-0.021,0.757-0.067
+						c8.243-1.731,16.483-4.022,24.403-6.702c5.017-1.583,9.956-3.532,14.712-5.81c-0.235,0.461-0.469,0.869-0.714,1.229
+						c-1.671,2.83-3.914,5.304-6.672,7.371c-1.723,1.354-2.047,3.724-0.821,5.559l0.14,0.27c0.663,1.054,1.783,1.701,2.749,1.671
+						c0.312,0.063,0.605,0.094,0.887,0.094c0.863,0,1.645-0.297,2.292-0.854c3.433-2.649,6.512-6.088,8.885-9.945
+						c2.149-3.499,3.509-7.416,4.065-11.685C356.751,89.56,356.751,89.556,356.751,89.55z M340.567,53.994h-27.814v-7.065h27.814
+						V53.994z M348.956,46.928h29.159v7.065h-29.159V46.928z"/>
+				</g>
+			</symbol>
+
+			<symbol viewBox="0 0 670 670" id="icon-qmark">
+				<path d="M334.742,8C182.535,8,59,131.371,59,283.742c0,150.735,120.914,273.122,270.992,275.579l1.801,104.039
+			c0,0,110.922-61.602,213.977-202.34c40.305-48.008,64.551-109.773,64.551-177.278C610.484,131.535,486.949,8,334.742,8L334.742,8z
+			 M364.234,456.594h-67.833v-66.355h67.833V456.594z M386.516,301.602c-20.316,13.597-29.164,28.671-27.195,45.875v17.859h-58.164
+			v-19.172c-1.148-34.406,15.074-63.894,48.332-87.98c27.523-18.84,39.813-39.321,36.863-60.786
+			c-2.949-24.574-17.039-37.519-42.762-39.484c-1.801-0.164-3.605-0.164-5.242-0.164c-33.262,0-52.594,18.516-59.309,56.359
+			l-0.82,4.754l-58.164-19.008l0.82-3.601c14.418-66.027,56.852-98.469,126.32-96.176c62.258,3.442,96.5,36.535,102.07,98.305v0.328
+			C450.414,236.395,429.277,270.965,386.516,301.602L386.516,301.602z M386.516,301.602"/>
+			</symbol>
+
+			<symbol viewBox="0 0 730 730" id="icon-mail-alt">
+				<path d="M365.086,6C166.766,6,6,166.766,6,365.086c0,198.313,160.766,359.082,359.086,359.082
+			c198.313,0,359.082-160.77,359.082-359.082C724.168,166.766,563.398,6,365.086,6L365.086,6z M558.531,229.785L365.676,431.031
+			L170.992,229.785H558.531z M157.828,259.07l107.746,109.781L157.828,476.566V259.07z M171.371,506.129l114.606-119.301
+			l79.257,80.754l78.083-80.754l115.77,119.301H171.371z M572.348,476.566L461.656,368.562l110.691-111.104V476.566z
+			 M572.348,476.566"/>
+			</symbol>
+
+			<symbol viewBox="0 0 850 850" id="icon-wechat-alt">
+				<path clip-path="url(#SVGID_2_)" d="M428.239,834.705c-166,1.52-316.5-97.305-381.083-250.23s-30.472-329.711,86.371-447.633
+				c116.84-117.922,293.305-153.66,446.821-90.488c153.512,63.172,253.719,212.754,253.727,378.758
+				C835.095,650.279,653.403,833.65,428.239,834.705L428.239,834.705z M346.798,220.314c-108.609,0-197.559,70.793-197.559,160.73
+				c2.414,53.387,32.336,101.704,79.051,127.657l-19.765,56.867l69.05-33.145c22.703,5.438,45.891,8.605,69.223,9.457
+				c6.176,0,12.355-0.273,18.43-0.719c-3.977-12.836-6.024-26.191-6.075-39.629c2.391-42.121,21.442-81.563,52.942-109.625
+				c31.504-28.063,72.875-42.446,114.992-39.977c6.363,0.031,12.723,0.406,19.043,1.125
+				c-17.098-75.976-102.191-132.57-199.332-132.57V220.314z M539.579,362.068c-93.969,0-168,61.437-168,137.215
+				c0,75.773,74.031,137.145,168,137.145c20.063-0.832,39.961-4.008,59.289-9.457l54.199,28.398l-14.848-47.273
+				c39.105-23.152,64.809-63.582,69.188-108.813c0-75.434-79.016-136.871-167.828-136.871V362.068z M593.782,475.627
+				c-6.957,0.297-13.512-3.246-17.074-9.223c-3.566-5.977-3.566-13.43,0-19.406c3.563-5.977,10.117-9.52,17.074-9.223
+				c7.941-2.035,16.309,1.082,20.988,7.813c4.68,6.734,4.68,15.664,0,22.398c-4.68,6.73-13.047,9.848-20.988,7.813V475.627z
+				 M485.103,475.627c-6.953,0.297-13.508-3.246-17.074-9.223s-3.566-13.43,0-19.406s10.121-9.52,17.074-9.223
+				c7.941-2.035,16.313,1.082,20.988,7.813c4.68,6.734,4.68,15.664,0,22.398c-4.676,6.73-13.047,9.848-20.988,7.813V475.627z
+				 M420.864,347.904c-9.73,2.265-19.859-1.676-25.5-9.922c-5.64-8.25-5.64-19.113,0-27.363c5.641-8.246,15.77-12.188,25.5-9.922
+				c13.083,0,23.688,10.605,23.688,23.687c0,13.086-10.605,23.692-23.688,23.692V347.904z M282.595,347.904
+				c-9.735,2.265-19.86-1.676-25.5-9.922c-5.641-8.25-5.641-19.113,0-27.363c5.64-8.246,15.765-12.188,25.5-9.922
+				c13.082,0,23.687,10.605,23.687,23.687c0,13.086-10.605,23.692-23.687,23.692V347.904z M282.595,347.904"/>
+			</symbol>
+
+			<symbol viewBox="0 0 750 750" id="icon-weibo-alt">
+				<path d="M341.867,372.809c-71.074,3.281-128.551,41.363-128.551,88.863c0,47.446,57.477,83.086,128.551,79.767
+			c71.148-3.231,128.727-47.759,128.727-95.195C470.594,398.853,413.016,369.539,341.867,372.809L341.867,372.809z M390.309,492.278
+			c-21.77,28.104-64.844,41.828-106.688,19.175c-19.898-10.808-19.16-32.019-19.16-32.019s-8.281-66.978,63.234-75.332
+			C399.289,395.786,412.082,464.176,390.309,492.278L390.309,492.278z M390.309,492.278"/>
+			<path d="M308.469,456.637c-13.364,1.392-22.914,13.039-22.914,24.156c0,11.172,10.742,18.868,24.109,17.297
+				c13.285-1.508,24.106-11.78,24.106-22.914C333.77,464.021,323.805,455.172,308.469,456.637L308.469,456.637z M342.344,447.438
+				c-4.578,3.319-5.516,9.651-3.024,13.608c2.387,4.063,7.969,4.531,12.481,1.146c4.414-3.492,6.125-9.567,3.738-13.614
+				C353.152,444.621,347.652,443.493,342.344,447.438L342.344,447.438z M342.344,447.438"/>
+			<path d="M374.52,18C177.066,18,17,178.067,17,375.52c0,197.449,160.066,357.517,357.52,357.517
+				c197.449,0,357.515-160.067,357.515-357.517C732.035,178.067,571.969,18,374.52,18L374.52,18z M534.141,477.719
+				c-29.32,62.254-125.953,92.56-197.571,86.942c-68.062-5.36-155.574-27.961-164.617-110.321c0,0-4.773-37.312,31.399-85.578
+				c0,0,52-72.644,112.589-93.379c60.641-20.613,67.7,14.289,67.7,34.914c-3.215,17.521-9.239,27.809,13.52,20.735
+				c0,0,59.605-27.633,84.129-3.114c19.797,19.797,3.27,47.032,3.27,47.032s-8.203,9.093,8.691,12.367
+				C510.191,390.688,563.438,415.364,534.141,477.719L534.141,477.719z M475.371,305.731c-6.488,0-11.707-5.242-11.707-11.692
+				c0-6.55,5.219-11.789,11.707-11.789c0,0,73.055-13.523,64.324,65c0,0.465-0.051,0.832-0.156,1.246
+				c-0.828,5.551-5.723,9.821-11.48,9.821c-6.5,0-11.793-5.203-11.793-11.688C516.266,346.629,527.836,294.149,475.371,305.731
+				L475.371,305.731z M598.883,368.528h-0.102c-1.922,13.285-8.523,14.351-16.375,14.351c-9.395,0-16.996-5.918-16.996-15.312
+				c0-8.145,3.371-16.422,3.371-16.422c1.004-3.426,8.953-24.758-5.238-56.594c-25.977-43.644-78.313-44.297-84.492-41.801
+				c-6.227,2.438-15.434,3.68-15.434,3.68c-9.449,0-17.039-7.707-17.039-17.047c0-7.863,5.258-14.508,12.418-16.527
+				c0,0,0.152-0.262,0.414-0.313c0.52-0.105,1.039-0.636,1.609-0.687c7.277-1.391,33.266-6.5,58.516-0.586
+				C564.738,231.832,626.781,275.528,598.883,368.528L598.883,368.528z M598.883,368.528"/>
+			</symbol>
+
+			<symbol viewBox="0 0 850 850" id="icon-user-male">		
+				<path fill="#EFD0B0" d="M345.29,594.422h161.109v70.996c0,0-40.961,10.922-79.188,10.922c-40.961,0-79.191-10.922-79.191-10.922
+					v-70.996H345.29z M345.29,594.422"/>
+				<path fill="#F4DBBA" d="M244.255,392.352c0,0,0-8.191-13.652-8.191c-16.383,0-24.575,16.382-27.309,19.113
+					c-2.73,8.191-8.191,38.229,13.656,60.073c13.653,10.926,35.496,8.193,35.496,8.193L244.255,392.352z M601.974,395.082
+					c0,0,0-8.191,13.652-8.191c16.383,0,27.309,16.383,27.309,19.113c2.73,8.192,8.191,38.23-13.656,60.076
+					c-13.652,10.924-38.227,8.193-38.227,8.193L601.974,395.082z M601.974,395.082"/>
+				<path fill="#F4DBBA" d="M230.603,288.586c0,0,16.382,199.339,30.039,237.566c19.113,51.885,62.804,68.27,95.57,84.652
+					c21.848,10.922,38.23,16.383,68.27,19.113c32.765,0,40.957-5.461,65.535-16.381c43.691-16.385,73.727-35.5,92.844-73.729
+					c16.383-32.768,32.766-240.3,32.766-240.3l-62.805-79.187L230.603,288.586z M230.603,288.586"/>
+				<path fill="#EEF3F2" d="M427.212,834.719L331.638,676.34h188.414L427.212,834.719z M427.212,834.719"/>
+				<path fill="#EF6665" d="M427.212,673.609l21.844,30.039l-10.922,19.113l8.191,95.574l-19.113,16.383l-21.848-16.383l8.192-95.574
+					l-10.922-19.113L427.212,673.609z M427.212,673.609"/>
+				<path fill="#322C28" d="M394.442,122.016c-150.187,13.652-166.57,128.34-169.3,152.918c-2.731,21.844,5.461,109.227,5.461,109.227
+					s8.191,5.461,8.191,8.191c2.731,10.922,2.731,35.5,2.731,35.5h8.191c0,0-2.731-92.843,2.73-111.957
+					c5.465-19.117,43.692-38.23,43.692-38.23s0,8.191-2.731,16.382c-2.73,8.192-10.922,19.118-10.922,19.118s19.114,0,35.5-5.465
+					c21.844-5.461,43.688-16.383,43.688-16.383s0,5.461-2.731,10.922c-2.73,5.461-8.191,10.926-8.191,10.926s71-5.465,122.883-21.848
+					c40.957-13.652,68.266-40.961,68.266-40.961s35.496,13.656,46.422,71c10.922,46.422,5.461,87.379,5.461,117.417h8.191
+					c0,0,0-27.308,2.73-35.499c2.73-16.383,19.113-13.652,19.113-16.383c0-13.652,13.656-87.383,0-141.996
+					c-10.922-43.691-49.152-84.648-70.996-95.574C528.247,138.399,484.556,113.825,394.442,122.016L394.442,122.016z M610.165,679.07
+					c-40.961-21.844-92.844-19.113-92.844-19.113l-90.109,174.762c92.84,0,174.762-30.035,243.027-81.918
+					C664.778,733.684,651.126,698.188,610.165,679.07L610.165,679.07z M427.212,834.719l-98.305-174.762c0,0-51.882-2.73-92.843,19.113
+					c-30.036,19.117-51.883,60.074-57.344,73.73C246.985,801.955,334.368,834.719,427.212,834.719L427.212,834.719z M427.212,834.719"
+					/>
+				<path fill="#FFFFFF" d="M506.399,632.648l-79.188,40.961l40.957,51.885l71-62.807L506.399,632.648z M345.29,632.648l81.922,40.961
+					l-43.691,51.885l-70.996-62.807L345.29,632.648z M345.29,632.648"/>
+				<path fill="#E1C6A3" d="M427.212,575.305c-10.926,0-27.309,0-38.23-10.922c-2.731-2.73-2.731-5.461,0-5.461
+					c2.73-2.73,5.46-2.73,5.46,0c8.192,8.191,19.114,10.922,32.77,10.922c16.383,0,27.305-2.73,32.766-10.922c0,0,2.73-2.73,5.461,0
+					c2.73,0,2.73,2.73,2.73,2.73v2.73C454.517,572.576,438.134,575.305,427.212,575.305L427.212,575.305z M427.212,575.305"/>
+			</symbol>
+
+			<symbol viewBox="0 0 850 850" id="icon-photo-add">
+				<path d="M541.09,817.379H107.844c-51.231,0-92.844-41.508-92.844-92.57V107.68C15,56.727,56.613,15,107.84,15h618.883
+				c51.117,0,92.785,41.618,92.785,92.68v431.992c0,16.984-13.871,31.02-30.965,31.02s-31.129-13.871-31.129-31.02V107.68
+				c0-16.984-13.871-30.91-30.855-30.91H107.84c-17.039,0-31.129,13.926-31.129,30.91v616.91c0,16.984,14.09,30.914,31.129,30.914
+				h433.195c16.93,0,30.965,13.762,30.965,30.91C572.055,803.453,557.965,817.379,541.09,817.379L541.09,817.379z M541.09,817.379"/>
+			<path d="M45.965,632.348c-7.809,0-15.785-3.219-21.789-9.281c-11.961-11.961-11.961-31.566,0-43.527L178.402,425.91
+				c28.125-28.124,71.325-35.335,107.043-17.421l167.774,83.777c11.848,6.063,26.211,3.715,35.496-5.734l278.09-277.054
+				c11.961-12.012,31.566-12.012,43.746,0c12.18,11.906,12.07,31.516,0,43.637L532.352,530.168
+				c-28.07,28.07-71.051,35.008-106.934,17.094l-167.824-83.449c-11.961-6.063-26.16-3.605-35.5,5.734L67.863,622.957
+				C61.855,629.02,53.992,632.348,45.965,632.348L45.965,632.348z M293.473,323.567c-51.118,0-92.844-41.399-92.844-92.571
+				c0-51.117,41.508-92.57,92.844-92.57c51.007,0,92.843,41.508,92.843,92.57C386.316,282.114,344.426,323.567,293.473,323.567
+				L293.473,323.567z M293.473,200.25c-16.93,0-31.02,13.817-31.02,30.801c0,17.094,13.981,30.91,31.02,30.91
+				c16.929,0,30.91-13.816,30.91-30.91C324.383,214.067,310.512,200.25,293.473,200.25L293.473,200.25z M679.973,834.145
+				c-17.094,0-31.078-13.762-31.078-31.02V618.039c0-16.875,13.766-30.91,31.078-30.91c16.93,0,31.02,13.871,31.02,30.91v185.086
+				C710.938,820.383,696.957,834.145,679.973,834.145L679.973,834.145z M679.973,834.145"/>
+			<path d="M803.617,709.574c-7.594,0-15.184-2.676-21.41-8.305l-102.289-96.117L577.133,701.27
+				c-12.285,11.523-31.84,11.09-43.527-1.254c-11.738-12.508-11.195-31.895,1.367-43.746l108.246-101.637
+				c8.898-10.977,22.063-17.148,36.426-17.148c14.254,0,27.414,6.391,36.207,17.148L824.203,656.27
+				c12.563,11.852,13.219,31.129,1.422,43.746C820.219,706.242,811.973,709.574,803.617,709.574L803.617,709.574z M803.617,709.574"
+				/>
+			</symbol>
+
+			<symbol viewBox="0 0 750 750" id="icon-plus-alt">
+				<path d="M514.777,322.809H421.75v-93.024c0-25.598-20.914-46.516-46.512-46.516c-25.593,0-46.511,20.918-46.511,46.516v93.024
+			h-93.028c-25.594,0-46.511,20.918-46.511,46.511c0,25.598,20.917,46.512,46.511,46.512h93.028v93.027
+			c0,25.594,20.918,46.512,46.511,46.512c25.598,0,46.512-20.918,46.512-46.512v-93.027h93.027c25.594,0,46.512-20.914,46.512-46.512
+			C561.426,343.863,540.371,322.809,514.777,322.809L514.777,322.809z M514.777,322.809"/>
+				<path d="M375.238,3C169.922,3,3,169.922,3,375.238s166.371,372.238,372.238,372.238c205.317,0,372.239-166.371,372.239-372.238
+			C747.477,169.922,580.555,3,375.238,3L375.238,3z M589.914,590.461c-57.523,57.523-133.762,89.035-214.676,89.035
+			c-81.465,0-157.566-31.375-214.672-89.035c-57.523-57.52-89.035-133.758-89.035-215.223c0-81.465,31.375-157.566,89.035-214.672
+			c57.52-57.523,133.758-89.035,214.672-89.035c81.465,0,157.567,31.375,214.676,89.035c57.52,57.52,89.031,133.758,89.031,214.672
+			C678.809,456.703,647.434,532.805,589.914,590.461L589.914,590.461z M589.914,590.461"/>
+			</symbol>
+		
+			<symbol viewBox="0 0 800 800" id="icon-minus-alt">
+				<path d="M397.831,27.762C192.514,27.762,25.592,194.684,25.592,400s166.371,372.238,372.238,372.238
+					c205.316,0,372.238-166.371,372.238-372.238C770.068,194.684,603.146,27.762,397.831,27.762L397.831,27.762z M612.506,615.223
+					c-57.523,57.523-133.762,89.035-214.675,89.035c-81.465,0-157.566-31.375-214.672-89.035
+					C125.635,557.703,94.124,481.465,94.124,400s31.375-157.566,89.035-214.672c57.52-57.523,133.758-89.035,214.672-89.035
+					c81.464,0,157.566,31.375,214.675,89.035c57.52,57.52,89.031,133.758,89.031,214.672
+					C701.4,481.465,670.025,557.566,612.506,615.223L612.506,615.223z M612.506,615.223"/>
+
+				<path d="M537.643,426.973H255.815c-25.457,0-46.375-20.918-46.375-46.375s20.918-46.375,46.375-46.375h281.69
+					c25.457,0,46.375,20.918,46.375,46.375C584.018,406.055,563.1,426.973,537.643,426.973L537.643,426.973z M537.643,426.973"/>
+			</symbol>
+
+			<symbol viewBox="0 0 720 720" id="icon-rotate">
+				<path d="M48,407.684C48,579.309,187.672,718.57,360.113,718.57c172.446,0,312.118-139.262,312.118-310.887
+			c0-72.089-24.574-138.852-66.355-191.691l-57.344,53.656c28.672,38.504,45.465,86.426,45.465,138.035
+			c0,129.023-104.855,233.473-233.883,233.473c-129.433,0-233.879-104.449-233.879-233.473
+			c0-126.156,100.762-228.964,226.098-233.063v108.547l156.059-140.086L352.332,3v93.39C183.578,100.895,48,238.52,48,407.684
+			L48,407.684z M48,407.684"/>
+			</symbol>
+
+		</svg>
+	</div>
+</body>
+</html>

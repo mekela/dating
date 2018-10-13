@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            意见反馈
+        </div>
+        <div class="top-panel__filter">
+            保存
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="main-form">
+            <div class="main-form__block">
+                <div class="main-form__item">
+                    <label>意见类型</label>
+                    <select>
+                        <option>使用问题</option>
+                        <option>身份作假2</option>
+                        <option>身份作假3</option>
+                    </select>
+                </div>
+                <div class="main-form__item">
+                    <label>请简单描述</label>
+                    <textarea placeholder="请简单描述一下你遇到的问题"></textarea>
+                </div>
+                <div class="main-form__item">
+                    <label>请上传截图</label>
+                    <div class="upload">
+                        <figure>
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <figcaption>上传截图</figcaption>
+                        </figure>
+                        <input type="file" >
+                    </div>
+                </div>
+            </div>
+            <div class="text_center"><button class="button">提交</button></div>
+        </div>
+    </div>
+</div>
+
+{% include "modals.html" %}
+{% endblock %}

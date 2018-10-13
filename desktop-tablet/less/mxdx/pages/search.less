@@ -1,0 +1,120 @@
+.list-con{
+	color: @color-gray;
+	.c-item{
+		padding: 3px 0;
+		.clearfix;
+	}
+	.col{
+		float: left;
+		width: 33.33333%;
+		padding: 5px;
+		&:first-child{
+			padding-top: 8px;
+		}
+	}
+	select{
+		height: 26px;
+		padding: 2px 5px;
+		color: @color-gray;
+		background: @color-vlgray;
+		border-color: @color-lgray2;
+	}
+}
+.list-user{
+	.panel{
+		margin-top: 10px;
+	}
+	.user-item{
+		position: relative;
+		padding: 20px;
+		.ui-remove{
+			position: absolute;
+			right: 0;
+			top: 0;
+			a{
+				float: left;
+				padding: 4px;
+				background: #f7f6f6;
+			}
+			.svg-icon{
+				float: left;
+				width: 12px;
+				height: 12px;
+				svg{
+					fill: @primary-color;
+				}
+			}
+		}
+	}
+	.ui-head{
+		position: relative;
+		padding: 8px 0 20px 60px;
+		color: @color-gray;
+		min-height: 55px;
+		border-bottom: 1px solid @color-lgray2;
+		p{
+			margin: 0;
+			font-size: @font-size-xs;
+		}
+	}
+	.ui-title{
+		color: @color-gray;
+		font-size: @font-size-sm;
+	}
+	.user-img{
+		position: absolute;
+		left: 0;
+		top: 0;
+		float: left;
+	}
+	.ui-body{
+		padding: 10px 0 0;
+		text-align: center;
+	}
+	.list-udetails{
+		padding: 0 0 5px;
+		li{
+			padding: 2px 5px;
+			margin: 0 1px 5px;
+			color: @color-gray;
+			font-size: @font-size-xs;
+		}
+	}
+}
+
+.lu-actions{
+	padding: 10px 0;
+	text-align: center;
+	.btn{
+		min-width: 150px;
+		margin: 5px 8px;
+	}
+}
+
+.note{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 40%;
+	z-index: 1;
+	padding: 30px 0;
+	color: @primary-text-color;
+	font-size: @font-size-sm;
+	.color-rgba(@primary-color,0.8,background);
+	p{
+		margin-bottom: 5px;
+	}
+	.btn{
+		margin-top: 10px;
+	}
+	.svg-icon-heart-alt{
+		svg{
+			fill: #fe3e3e;
+		}
+	}
+	.svg-icon-heart-break-alt{
+		svg{
+			fill: @color-dgray;
+		}
+	}
+}

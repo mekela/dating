@@ -1,0 +1,161 @@
+.bg-img{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.bg-primary{
+	background: @primary-color;
+}
+
+.v-container{
+	height: 100%;
+	body{
+		height: 100%;
+	}
+}
+
+.v-center{
+	display: table;
+	width: 100%;
+	height: 100%;
+	.v-out{
+		display: table-cell;
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.v-in{
+		margin: 120px 0 60px;
+	}
+}
+
+.st-container{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 40px 0;
+}
+.site-title{
+	color: @primary-color;
+	.site-name;
+	.bg-primary & {
+		color: @primary-text-color;
+	}
+	a{
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+
+
+.panel-form{
+	margin: 0;
+	max-width: 340px;
+	.color-rgba(@color-white,0.8,background);
+	.form-group{
+		margin: 0;
+		padding: 8px 0 2px;
+		border-bottom: 1px solid @color-gray;
+	}
+	.input-group{
+		background: transparent;
+	}
+	.input-group-addon{
+		padding: 0;
+		border-color: transparent;
+		background: transparent;
+	}
+	.form-control{
+		height: 40px;
+		border-color: transparent;
+		background: transparent;
+		box-shadow: none;
+	}
+}
+
+
+.user-gender-icon{
+	width: 160px;
+	height: 160px;
+	margin: 10px 0;
+	border-radius: 50%;
+	background: @color-white;
+}
+.ug-lbl{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	.in-radio{
+		position: absolute;
+		right: 100%;
+		top: 0;
+		margin-right: 10px;
+		&:checked{
+			+ .svg-icon{
+				background: @secondary-color;
+				+ .h5{
+					color: @secondary-text-color;
+				}
+			}
+		}
+	}
+}
+
+.lbl-icons{
+	padding: 10px 0;
+	margin: 0 0 10px;
+	border-bottom: 1px solid @color-gray;
+	.svg-icon{
+		position: relative;
+		top: 5px;
+	}
+}
+
+.variant-login{
+	position: relative;
+	padding:25px 0;
+	.btn-default{
+		display: block;
+		width:100%;
+		background: #fff;
+		margin:15px 0;
+		height:50px;
+		&:hover{
+			background: #ff6666;
+			color: #fff;
+			.svg-icon{
+				fill:  #fff;
+			}
+		}
+	}
+	.btn .svg-icon {
+		vertical-align: middle;
+		margin:0 10px 0 0;
+		font-size:25px; 
+	}
+}
+
+.error-page{
+	text-align: center;
+	background: #e5e5e5;
+	background: -moz-linear-gradient(top, #e5e5e5 0%, #fefefe 95%);
+	background: -webkit-linear-gradient(top, #e5e5e5 0%,#fefefe 95%);
+	background: linear-gradient(to bottom, #e5e5e5 0%,#fefefe 95%);
+}
+.error-page-bottom{
+	padding:45px 0;
+	text-align: center;
+	p{
+		padding-bottom:30px;
+		font-size:18px;
+		color: #000000;
+	}
+	.btn{
+		font-size:18px;
+		img{
+			padding-right:8px;
+		}
+	}
+}

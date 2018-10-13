@@ -1,0 +1,37 @@
+.footer{
+	padding: 30px 0 20px;
+	color: @color-gray;
+	background: #303030;
+	.list-social{
+		text-align: center;
+		.svg-icon{
+			width: 44px;
+			height: 44px;
+		}
+		svg{
+			fill: @color-gray;
+		}
+		> li{
+			float: none;
+			display: inline-block;
+			> a{
+				padding: 5px;
+				&:hover, &:focus{
+					background: transparent;
+					svg{
+						fill: @color-white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ftitle{
+	color: @primary-color;
+	font-size: @font-size-lg;
+}
+.about-desc{
+	padding: 10px 0;
+	min-height: 145px;
+}

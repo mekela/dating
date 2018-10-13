@@ -1,0 +1,101 @@
+// Normally mainpage media styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+
+//styles for custom device width
+@include mq($max-width: 750px) {
+  html{
+    font-size:14px;
+  }
+  .start-page__form{
+    width:80%;
+  }
+  .start-page__form-item i{
+    left: 0.7rem;
+    font-size: 3.5rem;;
+  }
+  .start-page__form-item input{
+    padding-left:4rem;
+  }
+  .button.btn-xs{
+    font-size:1rem;
+  }
+  .button, .topic-nav .button{
+    border-width:1px;
+    border-radius:3px;
+  }
+  .topic-nav .button{
+    padding: 0.2rem 1.3rem;
+    font-size: 2.2rem;
+  }
+  .topic-profile-option__btn{
+    .btn-xs{
+      font-size:2rem;
+    }
+  }
+}
+
+@include mq($max-width: 430px) {
+  html {
+    font-size: 10px;
+  }
+  .start-page__buttons{
+    width:287px;
+  }
+  .logo{
+    img{
+      max-width: 150px;
+    }
+  }
+  .catalog__top figure{
+    max-width:60px;
+  }
+  .topic-block__profile {
+    .catalog__top figure{
+      max-width:15rem;
+    }
+  }
+  .topics-list__nav a{
+    margin-right:1.5rem;
+  }
+}
+
+@include mq($max-width: 375px) {
+  //.catalog__name h6{
+  //  font-size:1.2rem;
+  //}
+  //.catalog__top-text{
+  //  font-size:1rem;
+  //}
+  //.catalog__tags span{
+  //  font-size:0.8rem;
+  //}
+  //.catalog__name span{
+  //  padding-right:0.3rem;
+  //}
+  html {
+    font-size: 8px;
+  }
+  .user__hobby ul li div.user__hobby-title{
+    font-size:0px;
+  }
+  .messages section h6{
+    font-size: 1.8rem;
+  }
+  .messages section h6 span{
+    top:0;
+  }
+  .my-settings__input{
+    max-width:55%;
+  }
+
+  .modal{
+    min-width:270px;
+  }
+  .topic-profile-option__top nav a{
+    margin-left:0.5rem;
+  }
+  .update-existing-block__left i{
+    font-size:150%;
+  }
+}

@@ -1,0 +1,317 @@
+html,body{
+	min-height: 100%;
+}
+body{
+	color: @color-dgray;
+	font-family: @font-body;
+	background: @color-vlgray;
+}
+a{
+	color: @primary-color;
+	&:hover{
+		color: @primary-color;
+	}
+}
+
+.container{
+	max-width: @width-container;
+}
+
+.h1{
+	font-size: 32px;
+}
+.h2{
+	font-size: 30px;
+}
+.h3{
+	font-size: 28px;
+}
+.h4{
+	font-size: 26px;
+}
+.h5{
+	font-size: 24px;
+}
+.h6{
+	font-size: 20px;
+}
+.h7{
+	font-size: @font-size-md;
+}
+.font-bold{
+	font-weight: bold;
+}
+.display-block{
+	display: block;
+}
+
+
+
+.svg-icons{
+	display: none;
+}
+.svg-icon{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	svg{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.gray-icon &{
+		svg{
+			fill: #999999;
+		}
+	}
+	&.svg-icon-primary{
+		fill: @primary-color;
+	}
+	&.svg-icon-alt{
+		fill: @color-gray;
+	}
+}
+
+
+.text-primary{
+	color: @primary-color;
+}
+.text-red{
+	color: #ff6666;
+}
+.text-dgray{
+	color: @color-dgray;
+}
+.text-gray{
+	color: @color-gray;
+}
+.text-small{
+	font-size: @font-size-xs;
+}
+.text-link{
+	color: inherit;
+}
+.text-ulink{
+	color: inherit;
+	text-decoration: underline;
+}
+.link-small{
+	font-size: @font-size-xs;
+	&.text-gray{
+		&:hover{
+			color: @primary-color;
+		}
+	}
+}
+.text-uline{
+	text-decoration: underline;
+}
+
+.bg-vlgray{
+	background: @color-vlgray;
+}
+
+.badge-lvl{
+	min-width: 40px;
+	padding: 1px;
+	color: @color-brown;
+	font-weight: 400;
+	font-size: @font-size-xs - 1;
+	text-align: center;
+	line-height: 12px;
+	.color-gradient(#faefbf,#e9bc3d);
+}
+
+.user-img{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	.badge{
+		position: absolute;
+		left: 50%;
+		bottom: -3px;
+		margin-left: -20px;
+	}
+	.header-right & {
+		float: left;
+	}
+}
+
+.user-photo{
+	position: relative;
+	min-height: 20px;
+	img{
+		width: 100%;
+	}
+	.action-icons{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: @color-vlgray;
+		a{
+			float: left;
+			padding: 2px;
+		}
+		.svg-icon{
+			.icon-size(16px);
+		}
+		svg{
+			fill: @primary-color;
+		}
+	}
+	&.up-upload{
+		border: 1px solid #cdcbcb;
+		background: @color-vlgray;
+	}
+	&.user-photo-upload{
+		width: 150px;
+		height: 150px;
+		border: 1px solid #cdcbcb;
+		background: @color-vlgray;
+	}
+	.up-action-add{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: table;
+		height: 100%;
+		width: 100%;
+		color: @color-lgray;
+		text-align: center;
+		a{
+			display: table-cell;
+			vertical-align: middle;
+			color: @color-lgray;
+			text-decoration: none;
+		}
+		.svg-icon{
+			display: block;
+			width: 54px;
+			height: 54px;
+			margin: 3px auto;
+			svg{
+				fill: @color-lgray;
+			}
+		}
+	}
+}
+
+.page-body{
+	padding: 20px 0;
+	@media (min-width: @screen-md-min) {
+		padding: 50px 0;
+	}
+}
+
+.content{
+	padding: 10px;
+}
+
+.list-num{
+	counter-reset: list;
+	margin: 0;
+	padding: 0;
+}
+
+.list-num > li {
+	list-style: none;
+	position: relative;
+}
+
+.list-num > li:before {
+	counter-increment: list;
+	content: counter(list, decimal) " ) ";
+}
+
+.table{
+	thead{
+		> tr{
+			> th{
+				position: relative;
+				padding: 10px;
+		margin-bottom: 10px;
+				color: @primary-text-color;
+				text-align: center;
+				background: @primary-color;
+				border-width: 0;
+				&:first-child{
+					border-radius: 10px 0 0 10px;
+					&:before{
+						display: none;
+					}
+				}
+				&:last-child{
+					border-radius: 0 10px 10px 0;
+				}
+				&:before{
+					content: "";
+					position: absolute;
+					top: 10px;
+					bottom: 10px;
+					left: 0;
+					border-left: 1px solid @primary-text-color;
+				}
+			}
+		}
+	}
+	.border0{
+		border-width: 0;
+	}
+	> tbody{
+		> tr{
+			> td{
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
+		}
+	}
+}
+.table-bordered{
+	border-width: 0;
+	thead{
+		> tr{
+			> th{
+				border-width: 0;
+			}
+		}
+	}
+	> tbody{
+		> tr{
+			> td{
+				border-color: @color-vlgray;
+			}
+		}
+	}
+}
+
+.tooltip{
+	.tooltip-inner{
+		padding: 15px;
+		color: @color-dgray;
+		background: @color-lgray3;
+	}
+	&.top{
+		.tooltip-arrow{
+			border-top-color: @color-lgray3;
+		}
+	}
+	&.bottom{
+		.tooltip-arrow{
+			border-bottom-color: @color-lgray3;
+		}
+	}
+	&.right{
+		.tooltip-arrow{
+			border-right-color: @color-lgray3;
+		}
+	}
+	&.left{
+		.tooltip-arrow{
+			border-left-color: @color-lgray3;
+		}
+	}
+}
+
+//404

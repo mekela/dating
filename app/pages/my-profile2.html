@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel transparent">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<!-- user -->
+<div class="user-picture">
+    <img src="img/profile2.png" alt="">
+    <nav class="user-picture__nav">
+        <a href="#">我的主页</a>
+        <span>|</span>
+        <a href="#">我的求认识</a>
+    </nav>
+</div>
+<div class="user-desc">
+    <div class="container">
+        <div class="catalog__top-text user-desc__left">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            您有12条未读消息
+        </div>
+    </div>
+</div>
+<!-- end-user -->
+
+<div class="main spacing-xs">
+    <div class="container">
+        <div class="user">
+            <div class="user__block">
+                <div class="user__categories">
+                    <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-jpy"></i></a>
+                                <figcaption><a href="#">会员与金币</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-bullseye"></i></a>
+                                <figcaption><a href="#">相亲雷达</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-car"></i></a>
+                                <figcaption><a href="#">相亲加油站</a></figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <figcaption><a href="#">关注的人</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-ban"></i></a>
+                                <figcaption><a href="#">屏蔽的人</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                                <figcaption><a href="#">邀请好友</a></figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-cog"></i></a>
+                                <figcaption><a href="#">账户设置</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-question-circle"></i></a>
+                                <figcaption><a href="#">帮助中心</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="#"><i class="fa fa-commenting-o"></i></a>
+                                <figcaption><a href="#">反馈与举报</a></figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "bottom-panel.html" %}
+{% include "modals.html" %}
+
+{% endblock %}

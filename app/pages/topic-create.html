@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            发话题
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="topic-block">
+            <div class="topic-form">
+                <div class="topic-form__row">
+                    <div class="topic-form__left">
+                        <label>发话题</label>
+                    </div>
+                    <div class="topic-form__right text_right">
+                        <div class="checkbox-white">
+                            <input type="checkbox">
+                            <span>使用匿名发表话题</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic-form__row">
+                    <input type="text" placeholder="发个话题看看大家怎么说~">
+                </div>
+                <div class="topic-form__row">
+                    <label>描述</label>
+                </div>
+                <div class="topic-form__row ">
+                    <textarea placeholder="详细描述下话题吧~"></textarea>
+                </div>
+                <div class="topic-form__row">
+                    <div class="topic-form__count">50/500</div>
+                </div>
+            </div>
+        </div>
+        <div class="text_center topic-form__button"><button class="button">发布话题</button></div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="start-page start-page__column" style="background-image: url(img/start-bg.jpg);">
+    <div class="back">
+        <div class="container">
+            <a href="#" class="back__link"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+            <div class="back__text">
+                注册
+            </div>
+        </div>
+    </div>
+    <div class="start-page__form">
+        <div class="start-page__form-item">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <input type="text" placeholder="手机号">
+        </div>
+        <div class="start-page__form-item">
+            <i class="fa fa-shield" aria-hidden="true"></i>
+            <input type="text" placeholder="验证码">
+            <input type="button" value="获取验证码" class="start-page__form-code">
+        </div>
+        <div class="start-page__form-item">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="验证码">
+        </div>
+        <div class="start-page__form-item">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="验证码">
+        </div>
+        <div class="start-page__form-button">
+            <button class="button">免费注册</button>
+            <div>点击注册默认您同意《面向对象用户条款》</div>
+            <a href="#">我是会员，立即登录</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

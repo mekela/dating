@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            设置
+        </div>
+        <div class="top-panel__filter">
+            保存
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="my-settings my-settings-message">
+            <ul>
+                <li>
+                    <div class="my-settings__item">
+                        <span class="my-settings__left"><i class="fa fa-list" aria-hidden="true"></i></span>
+                        <span class="my-settings__text">筛选时已发送求认识</span>
+                        <span class="my-settings__input">
+                            <label class="radio">
+                                <input type="radio" name="" id="">
+                                <i></i>
+                                <span>通知我</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="" id="">
+                                <i></i>
+                                <span>不通知我</span>
+                            </label>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="edit-profile__button">
+            <button class="button">保存</button>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

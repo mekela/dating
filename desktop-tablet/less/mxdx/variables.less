@@ -1,0 +1,56 @@
+
+
+.hex-to-rgba (@color, @opacity: 1) {
+	@to-red: red(@color);
+	@to-green: green(@color);
+	@to-blue: blue(@color);
+	@rgba: rgba(@to-red,@to-green, @to-blue, @opacity);
+}
+.color-rgba(@color,@transparancy,@property){
+	.hex-to-rgba (@color,@transparancy);
+	@{property}: @rgba;
+}
+.color-gradient(@color-top,@color-bottom){
+	background: @color-bottom;
+	background: -moz-linear-gradient(top, @color-top 0%, @color-bottom 80%);
+	background: -webkit-linear-gradient(top, @color-top 0%,@color-bottom 80%);
+	background: linear-gradient(to bottom, @color-top 0%,@color-bottom 80%);
+}
+.icon-size(@size){
+	width: @size;
+	height: @size;
+}
+
+.site-name{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+@font-body: 					Tahoma, Arial, Helvetica,"Microsoft YaHei New", "Microsoft Yahei", sans-serif;
+@width-container:				1000px;
+
+@color-white:					#ffffff;
+@color-dgray:					#666666;
+@color-gray:					#999999;
+@color-gray2:					#cccccc;
+@color-lgray:					#b6b5b5;
+@color-lgray2:					#e4e4e4;
+@color-lgray3:					#e9e9e9;
+@color-vlgray:					#f2f2f2;
+@color-brown:					#622c03;
+@color-red:						#ff0000;
+
+@primary-color:					#ff6666;
+@primary-text-color:			@color-white;
+@primary-color10:				tint(@primary-color, 10%);
+
+
+@secondary-color:				#fff157;
+@secondary-text-color:			#622c03;
+
+@font-size-xs:					12px;
+@font-size-sm:					14px;
+@font-size-md:					16px;
+@font-size-lg:					18px;
+@font-size-xlg:					20px;

@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            付款
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="buy-coin">
+            <article>
+                <h5>请确认付款金额和选择付款方式</h5>
+            </article>
+            <div class="buy-coin__red-bnr">
+                <div>
+                    <i class="fa fa-jpy" aria-hidden="true"></i>
+                    <span>¥399元/年购买普通VIP <small>有效期从20180327-20190326</small></span>
+                </div>
+            </div>
+            <div class="buy-coin__list buy-coin__list-payment">
+                <ul>
+                    <li>
+                        <div class="buy-coin__ico"><img src="img/icons/pay-icon.png" alt=""></div>
+                        <div class="buy-coin__txt">推荐有支付宝账号 <br>的用户使用</div>
+                        <div class="buy-coin__button">
+                            <a href="#payment" class="button empty fancybox">支付宝支付</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="buy-coin__ico"><img src="img/icons/chat-icon.png" alt=""></div>
+                        <div class="buy-coin__txt">推荐有微信账号 <br>
+                            的用户使用</div>
+                        <div class="buy-coin__button">
+                            <a href="#payment" class="button empty fancybox">微信支付</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

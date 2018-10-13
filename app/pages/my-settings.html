@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            设置
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="my-settings">
+            <ul>
+                <li>
+                    <a href="#" class="my-settings__item">
+                        <span class="my-settings__left"><i class="fa fa-volume-up" aria-hidden="true"></i></span>
+                        <span class="my-settings__text">消息通知设置</span>
+                        <span class="my-settings__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-settings__item">
+                        <span class="my-settings__left"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="my-settings__text">消息通知设置</span>
+                        <span class="my-settings__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-settings__item">
+                        <span class="my-settings__left"><i class="fa fa-list" aria-hidden="true"></i></span>
+                        <span class="my-settings__text">消息通知设置</span>
+                        <span class="my-settings__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-settings__item">
+                        <span class="my-settings__left"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="my-settings__text">消息通知设置</span>
+                        <span class="my-settings__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-settings__item">
+                        <span class="my-settings__left"><i class="fa fa-share-square-o" aria-hidden="true"></i></span>
+                        <span class="my-settings__text">消息通知设置</span>
+                        <span class="my-settings__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% include "bottom-panel.html" %}
+
+{% include "modals.html" %}
+
+{% endblock %}

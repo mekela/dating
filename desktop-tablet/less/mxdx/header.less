@@ -1,0 +1,98 @@
+.site-logo{
+	display: inline-block;
+	width: 123px;
+	height: 40px;
+	margin-top: 4px;
+}
+.header{
+	padding: 10px 0;
+	color: @primary-text-color;
+	background: @primary-color;
+	a{
+		color: @primary-text-color;
+	}
+	.nav{
+		display: block;
+		padding: 7px 0;
+		font-size: @font-size-xlg;
+		text-align: center;
+		> li{
+			float: none;
+			display: inline-block;
+			&:first-child{
+				> a{
+					font-weight: bold;
+				}
+			}
+			> a{
+				padding: 4px 25px;
+				border-radius: 8px;
+				&:hover, &:focus{
+					color: @secondary-text-color;
+					background: transparent;
+				}
+			}
+			&.active{
+				> a, > a:hover, > a:focus{
+					color: @secondary-text-color;
+					background: @secondary-color;
+				}	
+			}
+		}
+		.nav-active{
+			position: relative;
+			display: inline-block;
+			.badge{
+				position: absolute;
+				left: 100%;
+				top: 0;
+				padding: 2px;
+				font-size: 8px;
+				min-width: 14px;
+				border-radius: 20px;
+				border: 1px solid @color-white;
+				background: @color-red;
+			}
+		}
+	}
+
+	.nav-faq{
+		display: inline-block;
+		padding: 10px 5px 5px;
+		.svg-icon{
+			width: 30px;
+			height: 30px;	
+		}
+		svg{
+			fill: @primary-text-color;
+		}
+	}
+}
+.logo{
+	display: inline-block;
+	padding: 4px 0;
+	.site-name;
+	&:hover{
+		text-decoration: none;
+	}
+	img{
+		display: block;
+		margin: 6px 0;
+	}
+}
+.header-right{
+	float: right;
+	.user-nname{
+		float: left;
+		padding: 14px 0 5px 10px;
+		max-width: 90px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		@media (min-width: @screen-md-min) {
+			padding-left: 15px;
+			padding-right: 10px;
+			max-width: 120px;
+		}
+	}
+}

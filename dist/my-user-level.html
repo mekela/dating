@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1"/>
+    <title>面向对象</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+</head>
+<body>
+<div class="wrapper">
+    
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            我的会员
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="my-user-level">
+            <ul>
+                <li>
+                    <i class="fa fa-diamond" aria-hidden="true"></i>
+                    <a href="#">开通VIP，</a>
+                    <a href="#">享受VIP特权</a>
+                    <span>当前为：免费用户</span>
+                </li>
+                <li>
+                    <i class="fa fa-jpy" aria-hidden="true"></i>
+                    <span>剩余金币：</span>
+                    <a href="#">2枚</a>
+                    <a href="#" class="button gray-btn">点击购买</a>
+                    <a href="#" class="button gray-btn">账户明细</a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-user-level my-user-level-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>普通VIP</th>
+                        <th>高级SVIP</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>赠送金币</td>
+                    <td>200</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>屏蔽用户</td>
+                    <td>50</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>搜索展示 <i class="fa fa-question-circle" aria-hidden="true"></i></td>
+                    <td>优先展示</td>
+                    <td>最高优先展示</td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>收求认识</td>
+                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td>不展示已经看过的</td>
+                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>¥399/年</strong></td>
+                    <td><strong>¥599/年</strong></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#tips" class="button fancybox">开通</a></td>
+                    <td><a href="#tips" class="button fancybox">升级</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal -->
+<div class="modal" id="attention">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <h6>资料不完整，无法发送求认识</h6>
+    <p>填写详细资料，认证通过后 <br>向ta发送求认识，马上找对象</p>
+    <a href="#" class="button">马上填写资料</a>
+</div>
+<div class="modal" id="attention2">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <p>关注对方后，将在我的关注列表展示</p>
+    <a href="#" class="button">确定</a>
+</div>
+<div class="modal" id="attention3">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <h6>发送求认识将扣除一枚金币 <br>
+        当前的金币数：<span class="red">120 个</span></h6>
+    <p>发送求认识后，系统将通知对方<br>
+        如果对方接受了你的求认识<br>
+        系统会把你的微信号公开给对方<br>
+        同时，你也可以获取到对方的微信号</p>
+    <a href="#" class="button">确定</a>
+</div>
+<div class="modal no-padding" id="tips">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close white"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="modal__head">
+        提示
+    </div>
+    <article class="modal__text-center">
+    <p>筛选对象时 <br>
+        VIP优先展示</p>
+    </article>
+</div>
+<div class="modal" id="attention4">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <p>取消对ta的关注</p>
+    <a href="#" class="button">确定</a>
+</div>
+<!-- end-modal -->
+
+
+</div>
+
+
+<!--SCRIPT -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/jquery.jscroll.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
+
+</body>
+</html>
