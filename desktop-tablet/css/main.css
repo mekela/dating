@@ -8998,6 +8998,36 @@ a.list-udetails li.active a:focus {
   align-items: center;
   justify-content: center;
 }
+.edit-profile__tips {
+  background-color: #dde6fb;
+  border-radius: 10px;
+  color: #666;
+  padding: 25px 40px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.edit-profile__tips h5 {
+  color: #434242;
+  padding-bottom: 0.8rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+.edit-profile__tips ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 0;
+  margin-left: 1.8rem;
+}
+.edit-profile__tips a {
+  color: #44b6fe;
+  text-decoration: underline;
+}
+.edit-profile__tips a:hover {
+  text-decoration: none;
+}
+.edit-profile__tips-button {
+  margin-top: 10px;
+}
 .user-lvl {
   max-width: 760px;
   margin: 0 auto;

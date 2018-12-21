@@ -109,7 +109,7 @@
   text-decoration: none;
   background: transparent url("../img/icons/blank.gif");
   /* helps IE */
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   z-index: 8040; }
 
 .fancybox-prev {
@@ -1667,6 +1667,24 @@ img {
     font-size: 1.75rem;
     text-decoration: none; }
 
+.edit-profile__tips {
+  background-color: #dde6fb;
+  border-radius: 10px;
+  color: #666;
+  padding: 1.8rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.1rem; }
+  .edit-profile__tips h5 {
+    color: #434242;
+    padding-bottom: 0.8rem;
+    font-weight: 500;
+    font-size: 1.75rem; }
+  .edit-profile__tips ul {
+    list-style-type: disc;
+    margin-left: 1.8rem; }
+  .edit-profile__tips a {
+    color: #44b6fe; }
+
 .checkbox, .radio {
   position: relative;
   overflow: hidden;
@@ -2710,7 +2728,7 @@ img {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  padding-left: 2rem; }
+  padding-left: 2.2rem; }
   .checkbox-white input {
     position: absolute;
     left: 0;
@@ -2718,26 +2736,30 @@ img {
     width: 100% !important;
     height: 100% !important;
     opacity: 0;
+    z-index: 2;
     cursor: pointer; }
     .checkbox-white input:checked + span:before {
       content: "\f00c"; }
-  .checkbox-white span:before {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
-    line-height: 1.5rem;
-    text-align: center;
-    font-size: 1.1rem;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #ff6666;
-    position: absolute;
-    left: 1px;
-    top: 50%;
-    margin-top: -0.75rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 1px solid #c5c4c4; }
+  .checkbox-white span {
+    text-align: left;
+    display: block; }
+    .checkbox-white span:before {
+      content: "";
+      font: normal normal normal 14px/1 FontAwesome;
+      line-height: 1.5rem;
+      text-align: center;
+      font-size: 1.1rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #ff6666;
+      position: absolute;
+      left: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid #c5c4c4; }
 
 @media only screen and (max-width: 750px) {
   html {

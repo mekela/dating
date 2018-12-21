@@ -6,10 +6,7 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="initial-scale=1"/>
     <title>面向对象</title>
-    <!--build:css css/styles.min.css-->
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <!--endbuild-->
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 <div class="wrapper">
@@ -240,6 +237,64 @@
     <p>取消对ta的关注</p>
     <a href="#" class="button">确定</a>
 </div>
+<div class="modal no-padding" id="payment">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close white"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="modal__head">
+        网上支付提示
+    </div>
+    <article class="modal__text-center">
+        <p>完成支付前，请不要关闭此验证窗口。 <br>
+            完成验证后，请根据您支付情况点击下面按钮。</p>
+    </article>
+    <nav class="modal__buttons">
+        <a href="#" class="button empty">支付遇到问题</a>
+        <a href="#" class="button">支付完成</a>
+    </nav>
+</div>
+<div class="modal" id="upload">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <article class="modal__text-left">
+        <p>请上传本人真实、露脸无遮挡、清晰的照片。严禁上传色情、暴力、广告等违法或推广图片，一旦发现，将永久封号。</p>
+    </article>
+    <div class="upload-image">
+        <div class="upload-image__drop">
+            <figure>
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <figcaption>上传图片</figcaption>
+            </figure>
+            <section>只支持JPG、PNG、GIT格式
+                图片大小不超过5M
+                建议尺寸为350×350像素</section>
+        </div>
+    </div>
+    <div class="search-form__button">
+        <button class="button empty">重置</button>
+        <button class="button">确认</button>
+    </div>
+</div>
+<div class="modal" id="upload2">
+    <a onclick='javascript:document.getElementById("fancybox-close").click();' class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <article class="modal__text-left">
+        <p>请上传本人真实、露脸无遮挡、清晰的照片。严禁上传色情、暴力、广告等违法或推广图片，一旦发现，将永久封号。</p>
+    </article>
+    <div class="upload-image">
+        <div class="upload-image__edit">
+            <div>
+                <strong>重新上传</strong>
+            </div>
+            <nav>
+                <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i></a>
+            </nav>
+        </div>
+        <div class="upload-image__drop upload-image__picture">
+            <img src="img/catalog_block.png" alt="">
+        </div>
+    </div>
+    <div class="search-form__button">
+        <button class="button empty">重置</button>
+        <button class="button">确认</button>
+    </div>
+</div>
 <!-- end-modal -->
 
 
@@ -248,10 +303,7 @@
 
 <!--SCRIPT -->
 <script src="js/jquery-3.2.1.min.js"></script>
-<!--build:js js/main.min.js -->
-<script src="js/jquery.jscroll.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<!-- endbuild -->
+<script src="js/main.min.js"></script>
 <script src="js/common.js"></script>
 <!-- END OF SCRIPT -->
 

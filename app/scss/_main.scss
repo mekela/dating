@@ -1219,6 +1219,30 @@
       text-decoration: none;
     }
   }
+  &__tips{
+    background-color: #dde6fb;
+    border-radius: 10px;
+    color: #666;
+    padding: 1.8rem;
+    font-size:1.75rem;
+    margin-bottom: 1.1rem;
+    &:last-child{
+      //margin-bottom: 0;
+    }
+    h5{
+      color: #434242;
+      padding-bottom: 0.8rem;
+      font-weight: 500;
+      font-size:1.75rem;
+    }
+    ul{
+      list-style-type: disc;
+      margin-left: 1.8rem;
+    }
+    a{
+      color: #44b6fe;
+    }
+  }
 }
   .checkbox{
     position: relative;
@@ -2471,7 +2495,7 @@
   position: relative;
   overflow: hidden;
   display: inline-block;
-  padding-left:2rem;
+  padding-left:2.2rem;
   input{
     position: absolute;
     left:0;
@@ -2479,6 +2503,7 @@
     width:100% !important;
     height:100% !important;
     opacity:0;
+    z-index: 2;
     cursor: pointer;
     &:checked + span{
       &:before{
@@ -2487,6 +2512,8 @@
     }
   }
   span{
+    text-align: left;
+    display: block;
     &:before{
       content: "";
       font: normal normal normal 14px/1 FontAwesome;
@@ -2500,7 +2527,7 @@
       position: absolute;
       left:1px;
       top:50%;
-      margin-top:-0.75rem;
+      transform: translateY(-50%);
       width:1.5rem;
       height:1.5rem;
       border:1px solid #c5c4c4;
