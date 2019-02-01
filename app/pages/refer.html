@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            红娘主页
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="topic-block">
+            <div class="buy-coin__red-bnr">
+                <div>
+                    <i class="fa fa-jpy" aria-hidden="true"></i>
+                    <span>账户可提现金额 <strong>¥399.00</strong></span>
+                </div>
+            </div>
+            <div class="refer-center-button">
+                <a href="#" class="button empty">提现</a>
+            </div>
+            <div class="buy-coin__list buy-coin__list-refer">
+                <ul>
+                    <li>
+                        <div class="buy-coin__txt">待结算金额</div>
+                        <div class="buy-coin__txt text_right">
+                            ¥ 29.9
+                        </div>
+                    </li>
+                    <li>
+                        <div class="buy-coin__txt">累计金额</div>
+                        <div class="buy-coin__txt text_right">
+                            ¥ 2389.9
+                        </div>
+                    </li>
+                    <li>
+                        <div class="buy-coin__txt">收支明细</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-block">
+            <div class="refer-title">
+                    推广流程
+            </div>
+            <div class="refer-items">
+                <figure>
+                    <span><i class="fa fa-share-alt" aria-hidden="true"></i> </span>
+                    <figcaption>
+                            分享推广 <br>
+                            给好友
+                    </figcaption>
+                </figure>
+            
+                <figure>
+                    <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                    <figcaption>
+                            分享推广 <br>
+                            给好友
+                    </figcaption>
+                </figure>
+            
+                <figure class="last">
+                    <span><i class="fa fa-jpy" aria-hidden="true"></i></span>
+                    <figcaption>
+                            分享推广 <br>
+                            给好友
+                    </figcaption>
+                </figure>  
+            </div>
+            <div class="refer-title text-center">
+                推广流程
+                <small>https://www.mxdxlove.cn/r=OCISIDOSDS</small>
+            </div>
+            <div class="refer-center-button">
+                <a href="#" class="button ">提现</a>
+            </div>
+            <div class="refer-title text-center">
+                            推广二维码
+            </div>
+            <div class="refer-title text-center">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                            <img src="img/qr2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="buy-coin__list buy-coin__list-refer">
+                <ul>
+                    <li>
+                        <div class="buy-coin__txt">
+                            <span class="blue">
+                            推广帮助：</span> 点击查看推广方式、推广渠道等说明。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-block">
+            <div class="buy-coin__list">
+                <ul>
+                    <li>
+                        <div class="buy-coin__txt">
+                            <span class="blue">
+                            推广帮助：</span> <br>
+                            <p>1、奖励统一于次月的前7个工作日内发放。</p>
+                            <p>2、奖励金额发放到红娘个人账户，可直接提现，也适用于
+                                面向对象订购时抵扣。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}

@@ -628,6 +628,9 @@ textarea {
 img {
   max-width: 100%; }
 
+span.blue {
+  color: #2cb2ff; }
+
 .wrapper {
   position: relative;
   overflow: hidden; }
@@ -1963,8 +1966,16 @@ img {
     .buy-coin__red-bnr small {
       display: block;
       font-size: 1.25rem; }
+    .buy-coin__red-bnr strong {
+      font-weight: normal;
+      color: #ffffff;
+      font-size: 3.75rem;
+      font-weight: 400;
+      line-height: 1.3;
+      display: block; }
     .buy-coin__red-bnr i {
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding-right: 2.3125rem; }
   .buy-coin__list li {
     display: flex;
     justify-content: space-between;
@@ -1983,6 +1994,8 @@ img {
     font-size: 1.75rem;
     margin-right: auto;
     padding-left: 1rem; }
+    .buy-coin__txt span.blue {
+      color: #2cb2ff; }
   .buy-coin__date {
     font-size: 1.75rem;
     text-align: right; }
@@ -2068,6 +2081,10 @@ img {
       font-size: 1.75rem;
       min-width: 13.75rem;
       box-sizing: border-box; }
+  .buy-coin__list-refer {
+    border-top: 1px solid #e4e4e4; }
+    .buy-coin__list-refer .buy-coin__txt {
+      margin-right: 0; }
 
 .dating-request {
   border-radius: 10px;
@@ -2760,6 +2777,154 @@ img {
       width: 1.5rem;
       height: 1.5rem;
       border: 1px solid #c5c4c4; }
+
+.refer-center-button {
+  text-align: center;
+  padding-bottom: 1.6875rem; }
+  .refer-center-button .button {
+    min-width: 16.875rem; }
+
+.refer-button {
+  text-align: center;
+  padding-bottom: 30px; }
+  .refer-button .btn {
+    min-width: 180px; }
+
+.refer-table {
+  padding-top: 0px;
+  padding-bottom: 20px; }
+  .refer-table .align-top {
+    align-self: flex-start; }
+  .refer-table .row .row:first-child {
+    border-top: 1px solid #e4e4e4; }
+  .refer-table strong {
+    font-weight: normal;
+    font-size: 18px;
+    color: #2cb1ff; }
+    .refer-table strong a {
+      color: #2cb1ff;
+      text-decoration: underline; }
+      .refer-table strong a:hover {
+        text-decoration: none; }
+  .refer-table ul, .refer-table ol {
+    padding: 10px 0 0 15px; }
+  .refer-table .row .row.last {
+    border-bottom: none; }
+  .refer-table .row .row.first {
+    border-top: none; }
+  .refer-table input {
+    width: 265px;
+    margin: 0 0px 0 0;
+    font-size: 16px;
+    color: #a9a8a8;
+    padding: 0 18px;
+    height: 30px;
+    border-radius: 9px;
+    background: #f2f2f2;
+    border: none; }
+    .refer-table input + strong {
+      position: relative;
+      left: 10px; }
+  .refer-table__row {
+    margin-bottom: 15px; }
+    .refer-table__row:last-child {
+      margin-bottom: 0; }
+    .refer-table__row img {
+      width: 40px;
+      margin: 0 10px 0 0; }
+    .refer-table__row input {
+      margin: 0;
+      width: 100%; }
+
+.refer-title {
+  font-size: 1.625rem;
+  color: #2cb1ff;
+  padding-bottom: 2.0625rem;
+  font-weight: 500;
+  text-align: center; }
+  .refer-title small {
+    font-size: 1.5rem;
+    color: #666666;
+    font-weight: 300; }
+
+.refer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.8125rem; }
+  .refer-items figure {
+    text-align: center;
+    position: relative;
+    font-size: 3.125rem;
+    margin: 0 2.5rem; }
+    .refer-items figure:before {
+      content: '';
+      background: url(../img/refer-arrow.svg) no-repeat center;
+      position: absolute;
+      width: 4.375rem;
+      height: 2.8125rem;
+      background-size: contain;
+      right: -4.9rem;
+      top: 1.625rem; }
+    .refer-items figure.last:before {
+      display: none; }
+    .refer-items figure > span {
+      width: 6.0625rem;
+      height: 6.0625rem;
+      border-radius: 50%;
+      background: #ff6666;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 1.875rem; }
+    .refer-items figure .svg-icon {
+      width: 38px;
+      height: 38px; }
+      .refer-items figure .svg-icon svg {
+        fill: #fff; }
+    .refer-items figure figcaption {
+      color: #666666;
+      text-align: center;
+      font-size: 1.5rem; }
+
+.buy-coin__list-refer-form {
+  margin-bottom: 3.75rem; }
+  .buy-coin__list-refer-form .buy-coin__txt {
+    margin-right: 0;
+    min-width: 30%; }
+  .buy-coin__list-refer-form a {
+    text-decoration: none; }
+  .buy-coin__list-refer-form .buy-coin__refer-input {
+    flex: 1;
+    font-size: 1.625rem; }
+    .buy-coin__list-refer-form .buy-coin__refer-input img {
+      width: 3.125rem;
+      vertical-align: middle;
+      margin: 0 0.5rem 0 0; }
+    .buy-coin__list-refer-form .buy-coin__refer-input input {
+      width: 100%;
+      height: 3.0625rem;
+      background: #f1f1f1;
+      border: none;
+      padding: 0 1rem;
+      color: #a4a3a3;
+      font-size: 1.625rem;
+      border-radius: 0.625rem; }
+    .buy-coin__list-refer-form .buy-coin__refer-input > div {
+      padding-bottom: 1.2rem; }
+
+.buy-coin__refer-input-col {
+  display: flex; }
+  .buy-coin__refer-input-col span {
+    padding-left: 0.7rem; }
+  .buy-coin__refer-input-col input {
+    width: auto;
+    flex: 1; }
+
+.buy-coin__txt-valign-top {
+  align-self: flex-start; }
 
 @media only screen and (max-width: 750px) {
   html {

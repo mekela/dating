@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- panel -->
+<div class="top-panel">
+    <div class="container">
+        <div class="top-panel__back">
+            <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="top-panel__center">
+            红娘主页
+        </div>
+        <div class="top-panel__filter">
+
+        </div>
+    </div>
+</div>
+<!-- end panel -->
+
+<div class="main">
+    <div class="container">
+        <div class="topic-block">
+            <div class="buy-coin__red-bnr">
+                <div>
+                    <i class="fa fa-jpy" aria-hidden="true"></i>
+                    <span>账户可提现金额 <strong>¥399.00</strong></span>
+                </div>
+            </div>
+            <div class="buy-coin__list buy-coin__list-refer-form">
+                <ul>
+                    <li>
+                        <div class="buy-coin__txt">提现金额</div>
+                        <div class="buy-coin__refer-input buy-coin__refer-input-col">
+                            <input type="text" value="¥ 29.9">
+                            <span class="blue">
+                                <a href="#">全部提现</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="buy-coin__txt buy-coin__txt-valign-top">提现到</div>
+                        <div class="buy-coin__refer-input">
+                            <div><img src="img/icons/pay-icon.png" alt=""> 支付宝</div>
+                            <div>
+                                <input type="text" placeholder="姓名">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="请填写支付宝号">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="buy-coin__txt">
+                            推广帮助： <br>
+                            <p>1、奖励统一于次月的前7个工作日内发放。</p>
+                            <p>2、奖励金额发放到红娘个人账户，可直接提现，也适用于
+                                面向对象订购时抵扣。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="refer-center-button">
+                <a href="#" class="button ">马上提现</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "modals.html" %}
+
+{% endblock %}
