@@ -3029,6 +3029,21 @@ span.blue {
   .landing-footer a {
     padding: 0 0.5rem; }
 
+.start-page {
+  position: relative; }
+
+.scroll_to {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; }
+  .scroll_to img {
+    max-width: 10vw; }
+
+.start-page__buttons-spacing {
+  padding-bottom: 5vw; }
+
 @media only screen and (max-width: 750px) {
   html {
     font-size: 14px; }

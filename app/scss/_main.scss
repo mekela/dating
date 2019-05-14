@@ -2869,3 +2869,19 @@
     padding: 0 0.5rem;
   }
 }
+.start-page{
+  position: relative;
+}
+.scroll_to{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  img{
+    max-width: 10vw;
+  }
+}
+.start-page__buttons-spacing{
+  padding-bottom: 5vw;
+}

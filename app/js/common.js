@@ -56,6 +56,12 @@ $(document).ready(function() {
 		loadingHtml: '<img src="img/icons/fancybox_loading@2x.gif" alt="Loading" /> Loading...'
 	});
 
+	//scrollto
+	$('.scroll_to a').on('click',function(){
+		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top+1},800);
+		return false;
+	});
+
 
 });
 
